@@ -1,0 +1,31 @@
+.arena {
+	position:relative;
+	border: 3px solid #090909;
+    background-color: #aaaaaa;
+}
+.feld {
+	position:absolute;
+}
+.round {
+	float:clear;
+	font-family:sans-serif;
+	font-size:0.8em;
+	color: grey;
+}
+.score {
+	padding-right:10px;
+	float:left;
+	font-family:sans-serif;
+	font-size:1,2em;
+	color: grey;
+}
+.highlight{
+  opacity: 0.5;
+  border:solid 1px #fff;
+  background-color:#eef;
+}
+.drophighlight{
+  opacity: 0.5;
+  border:solid 1px #000;
+  background-color:#aaf;
+}
