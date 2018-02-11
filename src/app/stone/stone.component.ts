@@ -18,12 +18,11 @@ import {
   animations: [
                trigger('stoneState', [
                  state('inactive', style({
-                   transform: 'scale(0.7)'
+                   transform: 'scale(0.8)'
                  })),
                  state('active',   style({
                    transform: 'scale(1)'
                  })),
-                 state('movedown', style({transform: 'translateX(0)'})),
                  transition('* => active', animate('100ms ease-in')),
                  transition('* => inactive', animate('100ms ease-out')),
                  transition('* => movedown', [style({transform: 'translateY(-100%)'}),
