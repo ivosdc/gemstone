@@ -58,4 +58,15 @@ export class StoneComponent implements OnInit {
           this.model.state = 'serie';
       }
   }
+  
+  getStyles() {
+      var styles = {'background-color': this.model.color ,
+              'width': (this.model.width - 6)  + "px",
+              'height': (this.model.height - 6) + "px"};
+      if (this.model.picture != "") {
+          styles['background-image'] = "url(\'/assets/images/" + this.model.picture + "\')";
+          styles['background-size'] = "cover";
+      }
+      return styles;
+  }
 }

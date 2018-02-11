@@ -2,9 +2,7 @@
   (@stoneState.start)="animationStarted($event)"
   (@stoneState.done)="animationDone($event)"
   [@stoneState]="model.state"
-  [ngStyle]="{'background-color':model.color,
-              'width':model.width - 6  + 'px',
-              'height':model.height - 6 + 'px'}"
+  [ngStyle]="getStyles()"
   (mouseover)="model.state = 'inactive';"
   (mouseout)="model.state = 'active';">
 </div>

@@ -10,11 +10,12 @@ export class ArenaService {
   public maxY = 8;
  
  
-  public static STONES: Stone[] = [new Stone('','#0000FF',1,1),
-                            new Stone('','#00FF00',1,1),
-                            new Stone('','#FF0000',1,1),
-                            new Stone('','#FFAA00',1,1),
-                            new Stone('','#FFFF00',1,1)];
+  public static STONES: Stone[] = [new Stone('1.png','#000000',1,1),
+                                   new Stone('','#0000FF',1,1),
+                                   new Stone('','#00FF00',1,1),
+                                   new Stone('','#FF0000',1,1),
+                                   new Stone('','#FFAA00',1,1),
+                                   new Stone('','#FFFF00',1,1)];
                                  
   
 public switchOptions(stone1, stone2) {
@@ -43,7 +44,7 @@ public isValidNeighbour(stone1, stone2) {
     public createRandomArena() {
       let rand: number;
       const arena: Stone[] = [];
-      arena.push(new Stone('','#0000FF',1,1));
+      arena.push(new Stone('1.png','#0000FF',1,1));
         for (let y = 0; y < this.maxY; y++) {
             for (let x = 0; x < this.maxX; x++) {
                 rand = Math.floor(Math.random() * ArenaService.STONES.length);

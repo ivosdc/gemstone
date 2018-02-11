@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { StoneService } from './stone.service';
+import { ArenaService } from './arena.service';
 
 describe('StoneService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [StoneService]
+      providers: [ArenaService]
     });
   });
 
-  it('should ...', inject([StoneService], (service: StoneService) => {
+  it('should ...', inject([ArenaService], (service: ArenaService) => {
     expect(service).toBeTruthy();
   }));
 });
