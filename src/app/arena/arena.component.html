@@ -1,6 +1,6 @@
-<div class="score">Score:{{score}}</div>
-<div class="round">Round:{{round}}</div>
-
+<br/>
+<div class="canvas">
+<div class="score">{{score}}</div>
 <div id="{{title}}" class="arena" [ngStyle]="{'width':this.arenawidth  + 'px',
                                               'height':this.arenaheight + 'px'}">
        <stone #gemstone *ngFor="let stone of stones" [model]="stone" dragDirective dropDirective
@@ -19,4 +19,5 @@
          class='feld'>
          </stone>
 </div>
- 
+<div class="round">Round:{{round}}</div>
+</div>

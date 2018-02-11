@@ -1,3 +1,7 @@
+.canvas {
+	position:relative;
+}
+
 .arena {
 	position:relative;
 	border: 3px solid #090909;
@@ -14,9 +18,9 @@
 }
 .score {
 	padding-right:10px;
-	float:left;
 	font-family:sans-serif;
 	font-size:1,2em;
+	font-style:bold;
 	color: grey;
 }
 .highlight{
