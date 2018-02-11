@@ -15,8 +15,4 @@ export class Stone {
               public y: number) {
   }
   
-  public toggleState = function() {
-      this.state === 'active' ? this.state = 'inactive' : this.state = 'active';
-    } 
-
 }

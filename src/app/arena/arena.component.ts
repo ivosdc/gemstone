@@ -44,12 +44,12 @@ export class ArenaComponent implements OnInit {
           this.stones[i].inSerie = [];
           this.stones[i].text = '';
       }
+      this.dragStone.state = 'inactive';
     }
   
   // passes the dropped item when an item is dropped into the drop element
   private addDropItem(event, item){
       if (this._arenaService.isValidNeighbour(this.dragStone, item)){
-          item.toggleState();
           this._arenaService.switchOptions(item,this.dragStone);
           this.round++;
           while(this.checkSeriePattern()) {
@@ -65,20 +65,23 @@ export class ArenaComponent implements OnInit {
   //passes the dragged item when an item is dragged into the drop element
   private dragenterEvent(event, item) {
       if (this._arenaService.isValidNeighbour(this.dragStone, item)){
-         item.toggleState();
-      }
+          item.state = 'inactive';
+       }
   }
    
   // passes the dragged item when the item is dragged out of the drop element.
   private dragleaveEvent(event, item) {
       if (this._arenaService.isValidNeighbour(this.dragStone, item)){
-          item.toggleState();
+          item.state = 'active';
       }
   }
   
   // This fires ever 350 millieseconds when an object is being dragged over the droppable box.
   // It passes the dragover event
   private dragoverMouse(event, item) {
+      if (this._arenaService.isValidNeighbour(this.dragStone, item)){
+          item.state = 'inactive';
+       }
   }
 
   
@@ -93,15 +96,17 @@ export class ArenaComponent implements OnInit {
        var item:Stone;
        for (var y = 0; y < this._arenaService.maxY; y++) {
            for (var x = 0; x < this._arenaService.maxX; x++) {
-
                if (this.getStone(x, y).inSerie.length > 0) {
                    log = log + x + ':' + y + '; ';
                    this.getStone(x, y).inSerie = [];
+                   this.getStone(x, y).state = 'serie';
                    for (var serie = y; serie > 0; serie--) {
                        color = this.getStone(x, serie - 1).color;
                        picture = this.getStone(x, serie - 1).picture;
                        item = this.getStone(x, serie);
-                       item.toggleState();
+                       if (item.state != 'serie') {
+                          item.state = 'movedown';
+                       }
                        item.color = color;
                        item.picture = picture;
                    }
@@ -109,13 +114,14 @@ export class ArenaComponent implements OnInit {
                    color = ArenaService.STONES[rand].color;
                    picture = ArenaService.STONES[rand].picture;
                    item = this.getStone(x, 0);
-                   item.toggleState()
+                   if (item.state != 'serie') {
+                       item.state = 'movedown';
+                   }
                    item.color = color;
                    item.picture = picture;
                }
            }
        }
-//       alert("Clear: " + log);
    }
    
    private checkSeriePattern(){
