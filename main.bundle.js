@@ -79,7 +79,11 @@ module.exports = "<div class=\"stone\"\n  (@stoneState.start)=\"animationStarted
 /***/ (function(module, exports, __webpack_require__) {
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(71);
+=======
+module.exports = __webpack_require__(72);
+>>>>>>> Stashed changes
 =======
 module.exports = __webpack_require__(72);
 >>>>>>> Stashed changes
@@ -116,7 +120,11 @@ var Stone = (function () {
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 70:
+=======
+/***/ 71:
+>>>>>>> Stashed changes
 =======
 /***/ 71:
 >>>>>>> Stashed changes
@@ -129,7 +137,11 @@ webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 webpackEmptyContext.id = 70;
+=======
+webpackEmptyContext.id = 71;
+>>>>>>> Stashed changes
 =======
 webpackEmptyContext.id = 71;
 >>>>>>> Stashed changes
@@ -138,7 +150,11 @@ webpackEmptyContext.id = 71;
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 71:
+=======
+/***/ 72:
+>>>>>>> Stashed changes
 =======
 /***/ 72:
 >>>>>>> Stashed changes
@@ -148,9 +164,15 @@ webpackEmptyContext.id = 71;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(83);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(84);
+>>>>>>> Stashed changes
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(80);
@@ -169,7 +191,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 78:
+=======
+/***/ 79:
+>>>>>>> Stashed changes
 =======
 /***/ 79:
 >>>>>>> Stashed changes
@@ -204,7 +230,11 @@ AppComponent = __decorate([
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 79:
+=======
+/***/ 80:
+>>>>>>> Stashed changes
 =======
 /***/ 80:
 >>>>>>> Stashed changes
@@ -214,17 +244,23 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular4_drag_drop__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__arena_arena_component__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stone_stone_component__ = __webpack_require__(82);
 =======
+=======
+>>>>>>> Stashed changes
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular4_drag_drop__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__arena_arena_component__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stone_stone_component__ = __webpack_require__(83);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -267,7 +303,11 @@ AppModule = __decorate([
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 80:
+=======
+/***/ 81:
+>>>>>>> Stashed changes
 =======
 /***/ 81:
 >>>>>>> Stashed changes
@@ -276,7 +316,11 @@ AppModule = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__arena_service__ = __webpack_require__(81);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__arena_service__ = __webpack_require__(82);
+>>>>>>> Stashed changes
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__arena_service__ = __webpack_require__(82);
 >>>>>>> Stashed changes
@@ -467,7 +511,11 @@ var _a;
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 81:
+=======
+/***/ 82:
+>>>>>>> Stashed changes
 =======
 /***/ 82:
 >>>>>>> Stashed changes
@@ -569,7 +617,11 @@ var ArenaService_1;
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 82:
+=======
+/***/ 83:
+>>>>>>> Stashed changes
 =======
 /***/ 83:
 >>>>>>> Stashed changes
@@ -657,7 +709,11 @@ var _a;
 /***/ }),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ 83:
+=======
+/***/ 84:
+>>>>>>> Stashed changes
 =======
 /***/ 84:
 >>>>>>> Stashed changes
