@@ -16,7 +16,11 @@ module.exports = function (it) {
 var global = __webpack_require__(4);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var core = __webpack_require__(16);
+=======
+var core = __webpack_require__(14);
+>>>>>>> Stashed changes
 =======
 var core = __webpack_require__(14);
 >>>>>>> Stashed changes
@@ -94,10 +98,13 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var hasOwnProperty = {}.hasOwnProperty;
 module.exports = function (it, key) {
   return hasOwnProperty.call(it, key);
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 module.exports = function (exec) {
@@ -107,6 +114,9 @@ module.exports = function (exec) {
     return true;
   }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -119,12 +129,18 @@ module.exports = function (exec) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = function (exec) {
   try {
     return !!exec();
   } catch (e) {
     return true;
   }
+=======
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+>>>>>>> Stashed changes
 =======
 var hasOwnProperty = {}.hasOwnProperty;
 module.exports = function (it, key) {
@@ -242,7 +258,11 @@ exports.f = __webpack_require__(11) ? Object.defineProperty : function definePro
 // Thank's IE8 for his funny defineProperty
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = !__webpack_require__(6)(function () {
+=======
+module.exports = !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 module.exports = !__webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -260,7 +280,11 @@ module.exports = !__webpack_require__(5)(function () {
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -284,6 +308,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 /* 13 */,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 14 */,
 /* 15 */
 /***/ (function(module, exports) {
@@ -303,6 +328,8 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* 14 */
 /***/ (function(module, exports) {
 
@@ -320,6 +347,9 @@ module.exports = function (it) {
   return it;
 };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -332,7 +362,11 @@ module.exports = function (it) {
 // optional / simple context binding
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 =======
 var aFunction = __webpack_require__(16);
 >>>>>>> Stashed changes
@@ -365,6 +399,7 @@ module.exports = function (fn, that, length) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var pIE = __webpack_require__(60);
 var createDesc = __webpack_require__(27);
 var toIObject = __webpack_require__(43);
@@ -373,12 +408,17 @@ var has = __webpack_require__(5);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 var pIE = __webpack_require__(61);
 var createDesc = __webpack_require__(27);
 var toIObject = __webpack_require__(43);
 var toPrimitive = __webpack_require__(46);
 var has = __webpack_require__(6);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -403,7 +443,11 @@ var global = __webpack_require__(4);
 var hide = __webpack_require__(25);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -417,7 +461,11 @@ var TPL = ('' + $toString).split(TO_STRING);
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 __webpack_require__(16).inspectSource = function (it) {
+=======
+__webpack_require__(14).inspectSource = function (it) {
+>>>>>>> Stashed changes
 =======
 __webpack_require__(14).inspectSource = function (it) {
 >>>>>>> Stashed changes
@@ -495,8 +543,13 @@ module.exports = g;
 var ctx = __webpack_require__(17);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var call = __webpack_require__(99);
 var isArrayIter = __webpack_require__(97);
+=======
+var call = __webpack_require__(100);
+var isArrayIter = __webpack_require__(98);
+>>>>>>> Stashed changes
 =======
 var call = __webpack_require__(100);
 var isArrayIter = __webpack_require__(98);
@@ -551,7 +604,11 @@ var META = __webpack_require__(28)('meta');
 var isObject = __webpack_require__(2);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -565,7 +622,11 @@ var isExtensible = Object.isExtensible || function () {
 };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var FREEZE = !__webpack_require__(6)(function () {
+=======
+var FREEZE = !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 var FREEZE = !__webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -684,6 +745,7 @@ var anInstance = __webpack_require__(32);
 var isObject = __webpack_require__(2);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var fails = __webpack_require__(6);
 var $iterDetect = __webpack_require__(101);
 var setToStringTag = __webpack_require__(40);
@@ -691,11 +753,16 @@ var inheritIfRequired = __webpack_require__(95);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 var fails = __webpack_require__(5);
 var $iterDetect = __webpack_require__(102);
 var setToStringTag = __webpack_require__(40);
 var inheritIfRequired = __webpack_require__(96);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -825,7 +892,11 @@ var createDict = function () {
   iframe.style.display = 'none';
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   __webpack_require__(94).appendChild(iframe);
+=======
+  __webpack_require__(95).appendChild(iframe);
+>>>>>>> Stashed changes
 =======
   __webpack_require__(95).appendChild(iframe);
 >>>>>>> Stashed changes
@@ -875,7 +946,11 @@ module.exports = function (target, src, safe) {
 var def = __webpack_require__(9).f;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -906,6 +981,7 @@ module.exports = function (key) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var global = __webpack_require__(4);
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
@@ -913,6 +989,8 @@ module.exports = function (key) {
   return store[key] || (store[key] = {});
 };
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 var core = __webpack_require__(14);
@@ -928,6 +1006,9 @@ var store = global[SHARED] || (global[SHARED] = {});
   copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
 });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -952,7 +1033,11 @@ module.exports = function (it) {
 // 7.1.15 ToLength
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var toInteger = __webpack_require__(62);
+=======
+var toInteger = __webpack_require__(63);
+>>>>>>> Stashed changes
 =======
 var toInteger = __webpack_require__(63);
 >>>>>>> Stashed changes
@@ -1015,7 +1100,11 @@ var toObject = __webpack_require__(45);
 var toLength = __webpack_require__(44);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var asc = __webpack_require__(90);
+=======
+var asc = __webpack_require__(91);
+>>>>>>> Stashed changes
 =======
 var asc = __webpack_require__(91);
 >>>>>>> Stashed changes
@@ -1070,8 +1159,13 @@ var anInstance = __webpack_require__(32);
 var forOf = __webpack_require__(24);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var $iterDefine = __webpack_require__(100);
 var step = __webpack_require__(102);
+=======
+var $iterDefine = __webpack_require__(101);
+var step = __webpack_require__(103);
+>>>>>>> Stashed changes
 =======
 var $iterDefine = __webpack_require__(101);
 var step = __webpack_require__(103);
@@ -1247,7 +1341,11 @@ module.exports = function (it) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = !__webpack_require__(11) && !__webpack_require__(6)(function () {
+=======
+module.exports = !__webpack_require__(11) && !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 module.exports = !__webpack_require__(11) && !__webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -1284,7 +1382,11 @@ module.exports = function (Constructor, NAME, next) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 exports.f = Object.getOwnPropertySymbols;
+=======
+module.exports = false;
+>>>>>>> Stashed changes
 =======
 module.exports = false;
 >>>>>>> Stashed changes
@@ -1297,12 +1399,15 @@ module.exports = false;
 /* 58 */
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(5);
 var toIObject = __webpack_require__(43);
 var arrayIndexOf = __webpack_require__(88)(false);
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 /***/ (function(module, exports) {
@@ -1318,6 +1423,9 @@ var has = __webpack_require__(6);
 var toIObject = __webpack_require__(43);
 var arrayIndexOf = __webpack_require__(89)(false);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1340,6 +1448,7 @@ module.exports = function (object, names) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1348,12 +1457,17 @@ var $keys = __webpack_require__(58);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
 var $keys = __webpack_require__(59);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1367,7 +1481,11 @@ module.exports = Object.keys || function keys(O) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 60 */
+=======
+/* 61 */
+>>>>>>> Stashed changes
 =======
 /* 61 */
 >>>>>>> Stashed changes
@@ -1382,7 +1500,11 @@ exports.f = {}.propertyIsEnumerable;
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 61 */
+=======
+/* 62 */
+>>>>>>> Stashed changes
 =======
 /* 62 */
 >>>>>>> Stashed changes
@@ -1421,7 +1543,11 @@ module.exports = {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 62 */
+=======
+/* 63 */
+>>>>>>> Stashed changes
 =======
 /* 63 */
 >>>>>>> Stashed changes
@@ -1441,7 +1567,10 @@ module.exports = function (it) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 63 */,
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -1456,7 +1585,12 @@ module.exports = function (it) {
 /* 71 */,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 72 */
+=======
+/* 72 */,
+/* 73 */
+>>>>>>> Stashed changes
 =======
 /* 72 */,
 /* 73 */
@@ -1471,9 +1605,15 @@ module.exports = function (it) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect__ = __webpack_require__(86);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect__ = __webpack_require__(87);
+>>>>>>> Stashed changes
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__);
@@ -1545,7 +1685,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 73 */,
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -1563,7 +1706,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 84 */,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 85 */
+=======
+/* 85 */,
+/* 86 */
+>>>>>>> Stashed changes
 =======
 /* 85 */,
 /* 86 */
@@ -1590,6 +1738,7 @@ __webpack_require__(125);
 __webpack_require__(124);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(16).Reflect;
 
 
@@ -1598,12 +1747,17 @@ module.exports = __webpack_require__(16).Reflect;
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 module.exports = __webpack_require__(14).Reflect;
 
 
 /***/ }),
 /* 87 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1620,6 +1774,7 @@ __webpack_require__(135);
 __webpack_require__(136);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(16).Reflect;
 
 
@@ -1628,12 +1783,17 @@ module.exports = __webpack_require__(16).Reflect;
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 module.exports = __webpack_require__(14).Reflect;
 
 
 /***/ }),
 /* 88 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1651,7 +1811,11 @@ module.exports = function (iter, ITERATOR) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 88 */
+=======
+/* 89 */
+>>>>>>> Stashed changes
 =======
 /* 89 */
 >>>>>>> Stashed changes
@@ -1688,6 +1852,7 @@ module.exports = function (IS_INCLUDES) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1696,12 +1861,17 @@ var isArray = __webpack_require__(98);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(2);
 var isArray = __webpack_require__(99);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1724,6 +1894,7 @@ module.exports = function (original) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1732,12 +1903,17 @@ var speciesConstructor = __webpack_require__(89);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 var speciesConstructor = __webpack_require__(90);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1750,7 +1926,11 @@ module.exports = function (original, length) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 91 */
+=======
+/* 92 */
+>>>>>>> Stashed changes
 =======
 /* 92 */
 >>>>>>> Stashed changes
@@ -1763,9 +1943,15 @@ module.exports = function (original, length) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
 var isObject = __webpack_require__(2);
 var invoke = __webpack_require__(96);
+=======
+var aFunction = __webpack_require__(16);
+var isObject = __webpack_require__(2);
+var invoke = __webpack_require__(97);
+>>>>>>> Stashed changes
 =======
 var aFunction = __webpack_require__(16);
 var isObject = __webpack_require__(2);
@@ -1802,7 +1988,11 @@ module.exports = Function.bind || function bind(that /* , ...args */) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 92 */
+=======
+/* 93 */
+>>>>>>> Stashed changes
 =======
 /* 93 */
 >>>>>>> Stashed changes
@@ -1839,7 +2029,11 @@ module.exports = function (it) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 93 */
+=======
+/* 94 */
+>>>>>>> Stashed changes
 =======
 /* 94 */
 >>>>>>> Stashed changes
@@ -1859,7 +2053,11 @@ var forOf = __webpack_require__(24);
 var createArrayMethod = __webpack_require__(51);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var $has = __webpack_require__(5);
+=======
+var $has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var $has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -1947,7 +2145,11 @@ module.exports = {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 94 */
+=======
+/* 95 */
+>>>>>>> Stashed changes
 =======
 /* 95 */
 >>>>>>> Stashed changes
@@ -1963,6 +2165,7 @@ module.exports = document && document.documentElement;
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1971,12 +2174,17 @@ var setPrototypeOf = __webpack_require__(61).set;
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(2);
 var setPrototypeOf = __webpack_require__(62).set;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1992,7 +2200,11 @@ module.exports = function (that, target, C) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 96 */
+=======
+/* 97 */
+>>>>>>> Stashed changes
 =======
 /* 97 */
 >>>>>>> Stashed changes
@@ -2022,7 +2234,11 @@ module.exports = function (fn, args, that) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 97 */
+=======
+/* 98 */
+>>>>>>> Stashed changes
 =======
 /* 98 */
 >>>>>>> Stashed changes
@@ -2044,7 +2260,11 @@ module.exports = function (it) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 98 */
+=======
+/* 99 */
+>>>>>>> Stashed changes
 =======
 /* 99 */
 >>>>>>> Stashed changes
@@ -2063,7 +2283,11 @@ module.exports = Array.isArray || function isArray(arg) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 99 */
+=======
+/* 100 */
+>>>>>>> Stashed changes
 =======
 /* 100 */
 >>>>>>> Stashed changes
@@ -2089,7 +2313,11 @@ module.exports = function (iterator, fn, value, entries) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 100 */
+=======
+/* 101 */
+>>>>>>> Stashed changes
 =======
 /* 101 */
 >>>>>>> Stashed changes
@@ -2102,6 +2330,7 @@ module.exports = function (iterator, fn, value, entries) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var LIBRARY = __webpack_require__(103);
 var $export = __webpack_require__(1);
 var redefine = __webpack_require__(19);
@@ -2110,11 +2339,16 @@ var has = __webpack_require__(5);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 var LIBRARY = __webpack_require__(57);
 var $export = __webpack_require__(1);
 var redefine = __webpack_require__(19);
 var hide = __webpack_require__(25);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2146,7 +2380,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+=======
+  var $default = $native || getMethod(DEFAULT);
+>>>>>>> Stashed changes
 =======
   var $default = $native || getMethod(DEFAULT);
 >>>>>>> Stashed changes
@@ -2165,7 +2403,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // fix for some old engines
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+=======
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
+>>>>>>> Stashed changes
 =======
       if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
 >>>>>>> Stashed changes
@@ -2203,7 +2445,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 101 */
+=======
+/* 102 */
+>>>>>>> Stashed changes
 =======
 /* 102 */
 >>>>>>> Stashed changes
@@ -2239,7 +2485,11 @@ module.exports = function (exec, skipClosing) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 102 */
+=======
+/* 103 */
+>>>>>>> Stashed changes
 =======
 /* 103 */
 >>>>>>> Stashed changes
@@ -2256,6 +2506,7 @@ module.exports = function (done, value) {
 /***/ }),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* 103 */
 /***/ (function(module, exports) {
 
@@ -2263,6 +2514,8 @@ module.exports = false;
 
 
 /***/ }),
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -2275,9 +2528,15 @@ module.exports = false;
 // 19.1.2.1 Object.assign(target, source, ...)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var getKeys = __webpack_require__(59);
 var gOPS = __webpack_require__(57);
 var pIE = __webpack_require__(60);
+=======
+var getKeys = __webpack_require__(60);
+var gOPS = __webpack_require__(58);
+var pIE = __webpack_require__(61);
+>>>>>>> Stashed changes
 =======
 var getKeys = __webpack_require__(60);
 var gOPS = __webpack_require__(58);
@@ -2295,7 +2554,11 @@ var $assign = Object.assign;
 // should work with symbols and should have deterministic property order (V8 bug)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = !$assign || __webpack_require__(6)(function () {
+=======
+module.exports = !$assign || __webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 module.exports = !$assign || __webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -2335,7 +2598,11 @@ var dP = __webpack_require__(9);
 var anObject = __webpack_require__(0);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var getKeys = __webpack_require__(59);
+=======
+var getKeys = __webpack_require__(60);
+>>>>>>> Stashed changes
 =======
 var getKeys = __webpack_require__(60);
 >>>>>>> Stashed changes
@@ -2361,7 +2628,11 @@ module.exports = __webpack_require__(11) ? Object.defineProperties : function de
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var $keys = __webpack_require__(58);
+=======
+var $keys = __webpack_require__(59);
+>>>>>>> Stashed changes
 =======
 var $keys = __webpack_require__(59);
 >>>>>>> Stashed changes
@@ -2383,7 +2654,11 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 var gOPN = __webpack_require__(106);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var gOPS = __webpack_require__(57);
+=======
+var gOPS = __webpack_require__(58);
+>>>>>>> Stashed changes
 =======
 var gOPS = __webpack_require__(58);
 >>>>>>> Stashed changes
@@ -2425,7 +2700,11 @@ module.exports = function (KEY) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var toInteger = __webpack_require__(62);
+=======
+var toInteger = __webpack_require__(63);
+>>>>>>> Stashed changes
 =======
 var toInteger = __webpack_require__(63);
 >>>>>>> Stashed changes
@@ -2446,6 +2725,7 @@ module.exports = function (index, length) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var classof = __webpack_require__(92);
 var ITERATOR = __webpack_require__(8)('iterator');
 var Iterators = __webpack_require__(37);
@@ -2453,11 +2733,16 @@ module.exports = __webpack_require__(16).getIteratorMethod = function (it) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 var classof = __webpack_require__(93);
 var ITERATOR = __webpack_require__(8)('iterator');
 var Iterators = __webpack_require__(37);
 module.exports = __webpack_require__(14).getIteratorMethod = function (it) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2501,7 +2786,11 @@ module.exports = __webpack_require__(34)(MAP, function (get) {
 var $export = __webpack_require__(1);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 =======
 var aFunction = __webpack_require__(16);
 >>>>>>> Stashed changes
@@ -2514,7 +2803,11 @@ var fApply = Function.apply;
 // MS Edge argumentsList argument is optional
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 $export($export.S + $export.F * !__webpack_require__(6)(function () {
+=======
+$export($export.S + $export.F * !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 $export($export.S + $export.F * !__webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -2540,6 +2833,7 @@ var $export = __webpack_require__(1);
 var create = __webpack_require__(38);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
 var anObject = __webpack_require__(0);
 var isObject = __webpack_require__(2);
@@ -2548,12 +2842,17 @@ var bind = __webpack_require__(91);
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 var aFunction = __webpack_require__(16);
 var anObject = __webpack_require__(0);
 var isObject = __webpack_require__(2);
 var fails = __webpack_require__(5);
 var bind = __webpack_require__(92);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2611,7 +2910,11 @@ var toPrimitive = __webpack_require__(46);
 // MS Edge has broken Reflect.defineProperty - throwing instead of returning false
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 $export($export.S + $export.F * __webpack_require__(6)(function () {
+=======
+$export($export.S + $export.F * __webpack_require__(5)(function () {
+>>>>>>> Stashed changes
 =======
 $export($export.S + $export.F * __webpack_require__(5)(function () {
 >>>>>>> Stashed changes
@@ -2726,7 +3029,11 @@ var gOPD = __webpack_require__(18);
 var getPrototypeOf = __webpack_require__(12);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -2823,7 +3130,11 @@ $export($export.S, 'Reflect', {
 var $export = __webpack_require__(1);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var setProto = __webpack_require__(61);
+=======
+var setProto = __webpack_require__(62);
+>>>>>>> Stashed changes
 =======
 var setProto = __webpack_require__(62);
 >>>>>>> Stashed changes
@@ -2854,7 +3165,11 @@ var gOPD = __webpack_require__(18);
 var getPrototypeOf = __webpack_require__(12);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 =======
 var has = __webpack_require__(6);
 >>>>>>> Stashed changes
@@ -2880,10 +3195,13 @@ function set(target, propertyKey, V /* , receiver */) {
     if (ownDesc.writable === false || !isObject(receiver)) return false;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     existingDescriptor = gOPD.f(receiver, propertyKey) || createDesc(0);
     existingDescriptor.value = V;
     dP.f(receiver, propertyKey, existingDescriptor);
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     if (existingDescriptor = gOPD.f(receiver, propertyKey)) {
@@ -2892,6 +3210,9 @@ function set(target, propertyKey, V /* , receiver */) {
       dP.f(receiver, propertyKey, existingDescriptor);
     } else dP.f(receiver, propertyKey, createDesc(0, V));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2936,9 +3257,15 @@ var meta = __webpack_require__(26);
 var assign = __webpack_require__(104);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var weak = __webpack_require__(93);
 var isObject = __webpack_require__(2);
 var fails = __webpack_require__(6);
+=======
+var weak = __webpack_require__(94);
+var isObject = __webpack_require__(2);
+var fails = __webpack_require__(5);
+>>>>>>> Stashed changes
 =======
 var weak = __webpack_require__(94);
 var isObject = __webpack_require__(2);
@@ -3044,7 +3371,11 @@ metadata.exp({ deleteMetadata: function deleteMetadata(metadataKey, target /* , 
 var Set = __webpack_require__(126);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var from = __webpack_require__(87);
+=======
+var from = __webpack_require__(88);
+>>>>>>> Stashed changes
 =======
 var from = __webpack_require__(88);
 >>>>>>> Stashed changes
@@ -3167,7 +3498,11 @@ var $metadata = __webpack_require__(7);
 var anObject = __webpack_require__(0);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 =======
 var aFunction = __webpack_require__(16);
 >>>>>>> Stashed changes
@@ -3260,7 +3595,11 @@ var Zone$1 = (function (global) {
     }
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     var Zone = (function () {
+=======
+    var Zone = /** @class */ (function () {
+>>>>>>> Stashed changes
 =======
     var Zone = /** @class */ (function () {
 >>>>>>> Stashed changes
@@ -3522,9 +3861,15 @@ var Zone$1 = (function (global) {
         };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         return Zone;
     }());
     Zone.__symbol__ = __symbol__;
+=======
+        Zone.__symbol__ = __symbol__;
+        return Zone;
+    }());
+>>>>>>> Stashed changes
 =======
         Zone.__symbol__ = __symbol__;
         return Zone;
@@ -3550,7 +3895,11 @@ var Zone$1 = (function (global) {
     };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     var ZoneDelegate = (function () {
+=======
+    var ZoneDelegate = /** @class */ (function () {
+>>>>>>> Stashed changes
 =======
     var ZoneDelegate = /** @class */ (function () {
 >>>>>>> Stashed changes
@@ -3720,7 +4069,11 @@ var Zone$1 = (function (global) {
     }());
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     var ZoneTask = (function () {
+=======
+    var ZoneTask = /** @class */ (function () {
+>>>>>>> Stashed changes
 =======
     var ZoneTask = /** @class */ (function () {
 >>>>>>> Stashed changes
@@ -3908,6 +4261,7 @@ var Zone$1 = (function (global) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3915,6 +4269,8 @@ var Zone$1 = (function (global) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -3988,6 +4344,12 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     var symbolValue = __symbol__('value');
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    var symbolFinally = __symbol__('finally');
+    var symbolParentPromiseValue = __symbol__('parentPromiseValue');
+    var symbolParentPromiseState = __symbol__('parentPromiseState');
+>>>>>>> Stashed changes
 =======
     var symbolFinally = __symbol__('finally');
     var symbolParentPromiseValue = __symbol__('parentPromiseValue');
@@ -4071,7 +4433,10 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 promise[symbolValue] = value;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 if (promise[symbolFinally] === symbolFinally) {
@@ -4084,6 +4449,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                     }
                 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4151,7 +4519,12 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         clearRejectedNoCatch(promise);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         var delegate = promise[symbolState] ?
+=======
+        var promiseState = promise[symbolState];
+        var delegate = promiseState ?
+>>>>>>> Stashed changes
 =======
         var promiseState = promise[symbolState];
         var delegate = promiseState ?
@@ -4166,6 +4539,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             try {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 resolvePromise(chainPromise, true, zone.run(delegate, undefined, [promise[symbolValue]]));
             }
             catch (error) {
@@ -4176,6 +4550,8 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     var ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
     var ZoneAwarePromise = (function () {
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 var parentPromiseValue = promise[symbolValue];
@@ -4198,6 +4574,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     var ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
     var ZoneAwarePromise = /** @class */ (function () {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4289,7 +4668,10 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         ZoneAwarePromise.prototype.finally = function (onFinally) {
@@ -4305,6 +4687,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             return chainPromise;
         };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4359,6 +4744,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         var proto = Ctor.prototype;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         var originalThen = proto.then;
         // Keep a reference to the original method.
         proto[symbolThen] = originalThen;
@@ -4371,6 +4757,8 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         var prop = ObjectGetOwnPropertyDescriptor(proto, 'then');
         if (prop && (prop.writable === false || !prop.configurable)) {
             // check Ctor.prototype.then propertyDescriptor is writable or not
@@ -4381,6 +4769,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         // Keep a reference to the original method.
         proto[symbolThen] = originalThen;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4434,6 +4825,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
 /** Object.getOwnPropertyDescriptor */
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -4441,6 +4833,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */ var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+=======
+var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+>>>>>>> Stashed changes
 =======
 var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 >>>>>>> Stashed changes
@@ -4815,6 +5210,7 @@ function isIEOrEdge() {
 // look like native function
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Zone.__load_patch('toString', function (global, Zone) {
     // patch Func.prototype.toString to let them look like native
     var originalFunctionToString = Zone['__zone_symbol__originalToString'] =
@@ -4826,6 +5222,8 @@ Zone.__load_patch('toString', function (global, Zone) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Zone.__load_patch('toString', function (global) {
     // patch Func.prototype.toString to let them look like native
     var originalFunctionToString = Function.prototype.toString;
@@ -4834,6 +5232,9 @@ Zone.__load_patch('toString', function (global) {
     var ERROR_SYMBOL = zoneSymbol('Error');
     var newFunctionToString = function toString() {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4864,6 +5265,11 @@ Zone.__load_patch('toString', function (global) {
     };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
+    Function.prototype.toString = newFunctionToString;
+>>>>>>> Stashed changes
 =======
     newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
     Function.prototype.toString = newFunctionToString;
@@ -5298,6 +5704,12 @@ function patchEventTarget(_global, apis, patchOptions) {
                         existingTask.zone.cancelTask(existingTask);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                        if (returnTarget) {
+                            return target;
+                        }
+>>>>>>> Stashed changes
 =======
                         if (returnTarget) {
                             return target;
@@ -5377,6 +5789,12 @@ function patchEventTarget(_global, apis, patchOptions) {
             }
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+            if (returnTarget) {
+                return this;
+            }
+>>>>>>> Stashed changes
 =======
             if (returnTarget) {
                 return this;
@@ -5960,7 +6378,10 @@ function filterProperties(target, onProperties, ignoreProperties) {
 function patchFilteredProperties(target, onProperties, ignoreProperties, prototype) {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     // check whether target is available, sometimes target will be undefined
@@ -5969,6 +6390,9 @@ function patchFilteredProperties(target, onProperties, ignoreProperties, prototy
         return;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6482,7 +6906,11 @@ Zone.__load_patch('PromiseRejectionEvent', function (global, Zone) {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(72);
+=======
+module.exports = __webpack_require__(73);
+>>>>>>> Stashed changes
 =======
 module.exports = __webpack_require__(73);
 >>>>>>> Stashed changes
