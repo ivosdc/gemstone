@@ -14,7 +14,11 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(4);
+<<<<<<< Updated upstream
 var core = __webpack_require__(16);
+=======
+var core = __webpack_require__(14);
+>>>>>>> Stashed changes
 var hide = __webpack_require__(25);
 var redefine = __webpack_require__(19);
 var ctx = __webpack_require__(17);
@@ -84,9 +88,18 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /* 5 */
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream
 var hasOwnProperty = {}.hasOwnProperty;
 module.exports = function (it, key) {
   return hasOwnProperty.call(it, key);
+=======
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+>>>>>>> Stashed changes
 };
 
 
@@ -94,12 +107,18 @@ module.exports = function (it, key) {
 /* 6 */
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream
 module.exports = function (exec) {
   try {
     return !!exec();
   } catch (e) {
     return true;
   }
+=======
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+>>>>>>> Stashed changes
 };
 
 
@@ -205,7 +224,11 @@ exports.f = __webpack_require__(11) ? Object.defineProperty : function definePro
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
+<<<<<<< Updated upstream
 module.exports = !__webpack_require__(6)(function () {
+=======
+module.exports = !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -215,7 +238,11 @@ module.exports = !__webpack_require__(6)(function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var toObject = __webpack_require__(45);
 var IE_PROTO = __webpack_require__(41)('IE_PROTO');
 var ObjectProto = Object.prototype;
@@ -231,6 +258,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 /***/ }),
 /* 13 */,
+<<<<<<< Updated upstream
 /* 14 */,
 /* 15 */
 /***/ (function(module, exports) {
@@ -247,6 +275,24 @@ module.exports = function (it) {
 
 var core = module.exports = { version: '2.5.3' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+=======
+/* 14 */
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.5.7' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+/* 15 */,
+/* 16 */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
+  return it;
+};
+>>>>>>> Stashed changes
 
 
 /***/ }),
@@ -254,7 +300,11 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -279,11 +329,19 @@ module.exports = function (fn, that, length) {
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 var pIE = __webpack_require__(60);
 var createDesc = __webpack_require__(27);
 var toIObject = __webpack_require__(43);
 var toPrimitive = __webpack_require__(46);
 var has = __webpack_require__(5);
+=======
+var pIE = __webpack_require__(61);
+var createDesc = __webpack_require__(27);
+var toIObject = __webpack_require__(43);
+var toPrimitive = __webpack_require__(46);
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var IE8_DOM_DEFINE = __webpack_require__(55);
 var gOPD = Object.getOwnPropertyDescriptor;
 
@@ -303,13 +361,21 @@ exports.f = __webpack_require__(11) ? gOPD : function getOwnPropertyDescriptor(O
 
 var global = __webpack_require__(4);
 var hide = __webpack_require__(25);
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var SRC = __webpack_require__(28)('src');
 var TO_STRING = 'toString';
 var $toString = Function[TO_STRING];
 var TPL = ('' + $toString).split(TO_STRING);
 
+<<<<<<< Updated upstream
 __webpack_require__(16).inspectSource = function (it) {
+=======
+__webpack_require__(14).inspectSource = function (it) {
+>>>>>>> Stashed changes
   return $toString.call(it);
 };
 
@@ -379,8 +445,13 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(17);
+<<<<<<< Updated upstream
 var call = __webpack_require__(99);
 var isArrayIter = __webpack_require__(97);
+=======
+var call = __webpack_require__(100);
+var isArrayIter = __webpack_require__(98);
+>>>>>>> Stashed changes
 var anObject = __webpack_require__(0);
 var toLength = __webpack_require__(44);
 var getIterFn = __webpack_require__(110);
@@ -425,13 +496,21 @@ module.exports = __webpack_require__(11) ? function (object, key, value) {
 
 var META = __webpack_require__(28)('meta');
 var isObject = __webpack_require__(2);
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var setDesc = __webpack_require__(9).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
+<<<<<<< Updated upstream
 var FREEZE = !__webpack_require__(6)(function () {
+=======
+var FREEZE = !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   return isExtensible(Object.preventExtensions({}));
 });
 var setMeta = function (it) {
@@ -542,10 +621,17 @@ var meta = __webpack_require__(26);
 var forOf = __webpack_require__(24);
 var anInstance = __webpack_require__(32);
 var isObject = __webpack_require__(2);
+<<<<<<< Updated upstream
 var fails = __webpack_require__(6);
 var $iterDetect = __webpack_require__(101);
 var setToStringTag = __webpack_require__(40);
 var inheritIfRequired = __webpack_require__(95);
+=======
+var fails = __webpack_require__(5);
+var $iterDetect = __webpack_require__(102);
+var setToStringTag = __webpack_require__(40);
+var inheritIfRequired = __webpack_require__(96);
+>>>>>>> Stashed changes
 
 module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
   var Base = global[NAME];
@@ -670,7 +756,11 @@ var createDict = function () {
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
+<<<<<<< Updated upstream
   __webpack_require__(94).appendChild(iframe);
+=======
+  __webpack_require__(95).appendChild(iframe);
+>>>>>>> Stashed changes
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -712,7 +802,11 @@ module.exports = function (target, src, safe) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(9).f;
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var TAG = __webpack_require__(8)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -735,12 +829,27 @@ module.exports = function (key) {
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 var global = __webpack_require__(4);
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
 module.exports = function (key) {
   return store[key] || (store[key] = {});
 };
+=======
+var core = __webpack_require__(14);
+var global = __webpack_require__(4);
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || (global[SHARED] = {});
+
+(module.exports = function (key, value) {
+  return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+  version: core.version,
+  mode: __webpack_require__(57) ? 'pure' : 'global',
+  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
+});
+>>>>>>> Stashed changes
 
 
 /***/ }),
@@ -760,7 +869,11 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
+<<<<<<< Updated upstream
 var toInteger = __webpack_require__(62);
+=======
+var toInteger = __webpack_require__(63);
+>>>>>>> Stashed changes
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -815,7 +928,11 @@ var ctx = __webpack_require__(17);
 var IObject = __webpack_require__(36);
 var toObject = __webpack_require__(45);
 var toLength = __webpack_require__(44);
+<<<<<<< Updated upstream
 var asc = __webpack_require__(90);
+=======
+var asc = __webpack_require__(91);
+>>>>>>> Stashed changes
 module.exports = function (TYPE, $create) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
@@ -862,8 +979,13 @@ var redefineAll = __webpack_require__(39);
 var ctx = __webpack_require__(17);
 var anInstance = __webpack_require__(32);
 var forOf = __webpack_require__(24);
+<<<<<<< Updated upstream
 var $iterDefine = __webpack_require__(100);
 var step = __webpack_require__(102);
+=======
+var $iterDefine = __webpack_require__(101);
+var step = __webpack_require__(103);
+>>>>>>> Stashed changes
 var setSpecies = __webpack_require__(108);
 var DESCRIPTORS = __webpack_require__(11);
 var fastKey = __webpack_require__(26).fastKey;
@@ -1029,7 +1151,11 @@ module.exports = function (it) {
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 module.exports = !__webpack_require__(11) && !__webpack_require__(6)(function () {
+=======
+module.exports = !__webpack_require__(11) && !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   return Object.defineProperty(__webpack_require__(54)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -1058,16 +1184,35 @@ module.exports = function (Constructor, NAME, next) {
 /* 57 */
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream
 exports.f = Object.getOwnPropertySymbols;
+=======
+module.exports = false;
+>>>>>>> Stashed changes
 
 
 /***/ }),
 /* 58 */
+<<<<<<< Updated upstream
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(5);
 var toIObject = __webpack_require__(43);
 var arrayIndexOf = __webpack_require__(88)(false);
+=======
+/***/ (function(module, exports) {
+
+exports.f = Object.getOwnPropertySymbols;
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__(6);
+var toIObject = __webpack_require__(43);
+var arrayIndexOf = __webpack_require__(89)(false);
+>>>>>>> Stashed changes
 var IE_PROTO = __webpack_require__(41)('IE_PROTO');
 
 module.exports = function (object, names) {
@@ -1085,11 +1230,19 @@ module.exports = function (object, names) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
 var $keys = __webpack_require__(58);
+=======
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+var $keys = __webpack_require__(59);
+>>>>>>> Stashed changes
 var enumBugKeys = __webpack_require__(35);
 
 module.exports = Object.keys || function keys(O) {
@@ -1098,14 +1251,22 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 60 */
+=======
+/* 61 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 61 */
+=======
+/* 62 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -1136,7 +1297,11 @@ module.exports = {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 62 */
+=======
+/* 63 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -1148,7 +1313,10 @@ module.exports = function (it) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 63 */,
+=======
+>>>>>>> Stashed changes
 /* 64 */,
 /* 65 */,
 /* 66 */,
@@ -1157,14 +1325,25 @@ module.exports = function (it) {
 /* 69 */,
 /* 70 */,
 /* 71 */,
+<<<<<<< Updated upstream
 /* 72 */
+=======
+/* 72 */,
+/* 73 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect__ = __webpack_require__(86);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_reflect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect__ = __webpack_require__(87);
+>>>>>>> Stashed changes
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es7_reflect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_zone_js_dist_zone__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_zone_js_dist_zone__);
@@ -1224,7 +1403,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //# sourceMappingURL=polyfills.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 73 */,
+=======
+>>>>>>> Stashed changes
 /* 74 */,
 /* 75 */,
 /* 76 */,
@@ -1236,7 +1418,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 82 */,
 /* 83 */,
 /* 84 */,
+<<<<<<< Updated upstream
 /* 85 */
+=======
+/* 85 */,
+/* 86 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(112);
@@ -1253,11 +1440,19 @@ __webpack_require__(122);
 __webpack_require__(123);
 __webpack_require__(125);
 __webpack_require__(124);
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(16).Reflect;
 
 
 /***/ }),
 /* 86 */
+=======
+module.exports = __webpack_require__(14).Reflect;
+
+
+/***/ }),
+/* 87 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(128);
@@ -1269,11 +1464,19 @@ __webpack_require__(132);
 __webpack_require__(134);
 __webpack_require__(135);
 __webpack_require__(136);
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(16).Reflect;
 
 
 /***/ }),
 /* 87 */
+=======
+module.exports = __webpack_require__(14).Reflect;
+
+
+/***/ }),
+/* 88 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 var forOf = __webpack_require__(24);
@@ -1286,7 +1489,11 @@ module.exports = function (iter, ITERATOR) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 88 */
+=======
+/* 89 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
@@ -1315,11 +1522,19 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(2);
 var isArray = __webpack_require__(98);
+=======
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(2);
+var isArray = __webpack_require__(99);
+>>>>>>> Stashed changes
 var SPECIES = __webpack_require__(8)('species');
 
 module.exports = function (original) {
@@ -1337,11 +1552,19 @@ module.exports = function (original) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 var speciesConstructor = __webpack_require__(89);
+=======
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+var speciesConstructor = __webpack_require__(90);
+>>>>>>> Stashed changes
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -1349,14 +1572,24 @@ module.exports = function (original, length) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 91 */
+=======
+/* 92 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
 var isObject = __webpack_require__(2);
 var invoke = __webpack_require__(96);
+=======
+var aFunction = __webpack_require__(16);
+var isObject = __webpack_require__(2);
+var invoke = __webpack_require__(97);
+>>>>>>> Stashed changes
 var arraySlice = [].slice;
 var factories = {};
 
@@ -1381,7 +1614,11 @@ module.exports = Function.bind || function bind(that /* , ...args */) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 92 */
+=======
+/* 93 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
@@ -1410,7 +1647,11 @@ module.exports = function (it) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 93 */
+=======
+/* 94 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1422,7 +1663,11 @@ var isObject = __webpack_require__(2);
 var anInstance = __webpack_require__(32);
 var forOf = __webpack_require__(24);
 var createArrayMethod = __webpack_require__(51);
+<<<<<<< Updated upstream
 var $has = __webpack_require__(5);
+=======
+var $has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var validate = __webpack_require__(20);
 var arrayFind = createArrayMethod(5);
 var arrayFindIndex = createArrayMethod(6);
@@ -1502,7 +1747,11 @@ module.exports = {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 94 */
+=======
+/* 95 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(4).document;
@@ -1510,11 +1759,19 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(2);
 var setPrototypeOf = __webpack_require__(61).set;
+=======
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(2);
+var setPrototypeOf = __webpack_require__(62).set;
+>>>>>>> Stashed changes
 module.exports = function (that, target, C) {
   var S = target.constructor;
   var P;
@@ -1525,7 +1782,11 @@ module.exports = function (that, target, C) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 96 */
+=======
+/* 97 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -1547,7 +1808,11 @@ module.exports = function (fn, args, that) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 97 */
+=======
+/* 98 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -1561,7 +1826,11 @@ module.exports = function (it) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 98 */
+=======
+/* 99 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -1572,7 +1841,11 @@ module.exports = Array.isArray || function isArray(arg) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 99 */
+=======
+/* 100 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -1590,16 +1863,27 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 100 */
+=======
+/* 101 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+<<<<<<< Updated upstream
 var LIBRARY = __webpack_require__(103);
 var $export = __webpack_require__(1);
 var redefine = __webpack_require__(19);
 var hide = __webpack_require__(25);
 var has = __webpack_require__(5);
+=======
+var LIBRARY = __webpack_require__(57);
+var $export = __webpack_require__(1);
+var redefine = __webpack_require__(19);
+var hide = __webpack_require__(25);
+>>>>>>> Stashed changes
 var Iterators = __webpack_require__(37);
 var $iterCreate = __webpack_require__(56);
 var setToStringTag = __webpack_require__(40);
@@ -1626,7 +1910,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
+<<<<<<< Updated upstream
   var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+=======
+  var $default = $native || getMethod(DEFAULT);
+>>>>>>> Stashed changes
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -1637,7 +1925,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // Set @@toStringTag to native iterators
       setToStringTag(IteratorPrototype, TAG, true);
       // fix for some old engines
+<<<<<<< Updated upstream
       if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+=======
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
+>>>>>>> Stashed changes
     }
   }
   // fix Array#{values, @@iterator}.name in V8 / FF
@@ -1667,7 +1959,11 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 101 */
+=======
+/* 102 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR = __webpack_require__(8)('iterator');
@@ -1695,7 +1991,11 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 102 */
+=======
+/* 103 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -1704,6 +2004,7 @@ module.exports = function (done, value) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 103 */
 /***/ (function(module, exports) {
 
@@ -1711,21 +2012,33 @@ module.exports = false;
 
 
 /***/ }),
+=======
+>>>>>>> Stashed changes
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 19.1.2.1 Object.assign(target, source, ...)
+<<<<<<< Updated upstream
 var getKeys = __webpack_require__(59);
 var gOPS = __webpack_require__(57);
 var pIE = __webpack_require__(60);
+=======
+var getKeys = __webpack_require__(60);
+var gOPS = __webpack_require__(58);
+var pIE = __webpack_require__(61);
+>>>>>>> Stashed changes
 var toObject = __webpack_require__(45);
 var IObject = __webpack_require__(36);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
+<<<<<<< Updated upstream
 module.exports = !$assign || __webpack_require__(6)(function () {
+=======
+module.exports = !$assign || __webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   var A = {};
   var B = {};
   // eslint-disable-next-line no-undef
@@ -1757,7 +2070,11 @@ module.exports = !$assign || __webpack_require__(6)(function () {
 
 var dP = __webpack_require__(9);
 var anObject = __webpack_require__(0);
+<<<<<<< Updated upstream
 var getKeys = __webpack_require__(59);
+=======
+var getKeys = __webpack_require__(60);
+>>>>>>> Stashed changes
 
 module.exports = __webpack_require__(11) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
@@ -1775,7 +2092,11 @@ module.exports = __webpack_require__(11) ? Object.defineProperties : function de
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+<<<<<<< Updated upstream
 var $keys = __webpack_require__(58);
+=======
+var $keys = __webpack_require__(59);
+>>>>>>> Stashed changes
 var hiddenKeys = __webpack_require__(35).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
@@ -1789,7 +2110,11 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 // all object keys, includes non-enumerable and symbols
 var gOPN = __webpack_require__(106);
+<<<<<<< Updated upstream
 var gOPS = __webpack_require__(57);
+=======
+var gOPS = __webpack_require__(58);
+>>>>>>> Stashed changes
 var anObject = __webpack_require__(0);
 var Reflect = __webpack_require__(4).Reflect;
 module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
@@ -1823,7 +2148,11 @@ module.exports = function (KEY) {
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 var toInteger = __webpack_require__(62);
+=======
+var toInteger = __webpack_require__(63);
+>>>>>>> Stashed changes
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -1836,10 +2165,17 @@ module.exports = function (index, length) {
 /* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 var classof = __webpack_require__(92);
 var ITERATOR = __webpack_require__(8)('iterator');
 var Iterators = __webpack_require__(37);
 module.exports = __webpack_require__(16).getIteratorMethod = function (it) {
+=======
+var classof = __webpack_require__(93);
+var ITERATOR = __webpack_require__(8)('iterator');
+var Iterators = __webpack_require__(37);
+module.exports = __webpack_require__(14).getIteratorMethod = function (it) {
+>>>>>>> Stashed changes
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
     || Iterators[classof(it)];
@@ -1878,12 +2214,20 @@ module.exports = __webpack_require__(34)(MAP, function (get) {
 
 // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
 var $export = __webpack_require__(1);
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 var anObject = __webpack_require__(0);
 var rApply = (__webpack_require__(4).Reflect || {}).apply;
 var fApply = Function.apply;
 // MS Edge argumentsList argument is optional
+<<<<<<< Updated upstream
 $export($export.S + $export.F * !__webpack_require__(6)(function () {
+=======
+$export($export.S + $export.F * !__webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   rApply(function () { /* empty */ });
 }), 'Reflect', {
   apply: function apply(target, thisArgument, argumentsList) {
@@ -1901,11 +2245,19 @@ $export($export.S + $export.F * !__webpack_require__(6)(function () {
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 var $export = __webpack_require__(1);
 var create = __webpack_require__(38);
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
 var anObject = __webpack_require__(0);
 var isObject = __webpack_require__(2);
 var fails = __webpack_require__(6);
 var bind = __webpack_require__(91);
+=======
+var aFunction = __webpack_require__(16);
+var anObject = __webpack_require__(0);
+var isObject = __webpack_require__(2);
+var fails = __webpack_require__(5);
+var bind = __webpack_require__(92);
+>>>>>>> Stashed changes
 var rConstruct = (__webpack_require__(4).Reflect || {}).construct;
 
 // MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -1958,7 +2310,11 @@ var anObject = __webpack_require__(0);
 var toPrimitive = __webpack_require__(46);
 
 // MS Edge has broken Reflect.defineProperty - throwing instead of returning false
+<<<<<<< Updated upstream
 $export($export.S + $export.F * __webpack_require__(6)(function () {
+=======
+$export($export.S + $export.F * __webpack_require__(5)(function () {
+>>>>>>> Stashed changes
   // eslint-disable-next-line no-undef
   Reflect.defineProperty(dP.f({}, 1, { value: 1 }), 1, { value: 2 });
 }), 'Reflect', {
@@ -2065,7 +2421,11 @@ $export($export.S, 'Reflect', {
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
 var gOPD = __webpack_require__(18);
 var getPrototypeOf = __webpack_require__(12);
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var $export = __webpack_require__(1);
 var isObject = __webpack_require__(2);
 var anObject = __webpack_require__(0);
@@ -2154,7 +2514,11 @@ $export($export.S, 'Reflect', {
 
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
 var $export = __webpack_require__(1);
+<<<<<<< Updated upstream
 var setProto = __webpack_require__(61);
+=======
+var setProto = __webpack_require__(62);
+>>>>>>> Stashed changes
 
 if (setProto) $export($export.S, 'Reflect', {
   setPrototypeOf: function setPrototypeOf(target, proto) {
@@ -2177,7 +2541,11 @@ if (setProto) $export($export.S, 'Reflect', {
 var dP = __webpack_require__(9);
 var gOPD = __webpack_require__(18);
 var getPrototypeOf = __webpack_require__(12);
+<<<<<<< Updated upstream
 var has = __webpack_require__(5);
+=======
+var has = __webpack_require__(6);
+>>>>>>> Stashed changes
 var $export = __webpack_require__(1);
 var createDesc = __webpack_require__(27);
 var anObject = __webpack_require__(0);
@@ -2195,9 +2563,17 @@ function set(target, propertyKey, V /* , receiver */) {
   }
   if (has(ownDesc, 'value')) {
     if (ownDesc.writable === false || !isObject(receiver)) return false;
+<<<<<<< Updated upstream
     existingDescriptor = gOPD.f(receiver, propertyKey) || createDesc(0);
     existingDescriptor.value = V;
     dP.f(receiver, propertyKey, existingDescriptor);
+=======
+    if (existingDescriptor = gOPD.f(receiver, propertyKey)) {
+      if (existingDescriptor.get || existingDescriptor.set || existingDescriptor.writable === false) return false;
+      existingDescriptor.value = V;
+      dP.f(receiver, propertyKey, existingDescriptor);
+    } else dP.f(receiver, propertyKey, createDesc(0, V));
+>>>>>>> Stashed changes
     return true;
   }
   return ownDesc.set === undefined ? false : (ownDesc.set.call(receiver, V), true);
@@ -2237,9 +2613,15 @@ var each = __webpack_require__(51)(0);
 var redefine = __webpack_require__(19);
 var meta = __webpack_require__(26);
 var assign = __webpack_require__(104);
+<<<<<<< Updated upstream
 var weak = __webpack_require__(93);
 var isObject = __webpack_require__(2);
 var fails = __webpack_require__(6);
+=======
+var weak = __webpack_require__(94);
+var isObject = __webpack_require__(2);
+var fails = __webpack_require__(5);
+>>>>>>> Stashed changes
 var validate = __webpack_require__(20);
 var WEAK_MAP = 'WeakMap';
 var getWeak = meta.getWeak;
@@ -2333,7 +2715,11 @@ metadata.exp({ deleteMetadata: function deleteMetadata(metadataKey, target /* , 
 /***/ (function(module, exports, __webpack_require__) {
 
 var Set = __webpack_require__(126);
+<<<<<<< Updated upstream
 var from = __webpack_require__(87);
+=======
+var from = __webpack_require__(88);
+>>>>>>> Stashed changes
 var metadata = __webpack_require__(7);
 var anObject = __webpack_require__(0);
 var getPrototypeOf = __webpack_require__(12);
@@ -2448,7 +2834,11 @@ metadata.exp({ hasOwnMetadata: function hasOwnMetadata(metadataKey, target /* , 
 
 var $metadata = __webpack_require__(7);
 var anObject = __webpack_require__(0);
+<<<<<<< Updated upstream
 var aFunction = __webpack_require__(15);
+=======
+var aFunction = __webpack_require__(16);
+>>>>>>> Stashed changes
 var toMetaKey = $metadata.key;
 var ordinaryDefineOwnMetadata = $metadata.set;
 
@@ -2533,7 +2923,11 @@ var Zone$1 = (function (global) {
     if (global['Zone']) {
         throw new Error('Zone already loaded.');
     }
+<<<<<<< Updated upstream
     var Zone = (function () {
+=======
+    var Zone = /** @class */ (function () {
+>>>>>>> Stashed changes
         function Zone(parent, zoneSpec) {
             this._properties = null;
             this._parent = parent;
@@ -2787,9 +3181,15 @@ var Zone$1 = (function (global) {
                 zoneDelegates[i]._updateTaskCount(task.type, count);
             }
         };
+<<<<<<< Updated upstream
         return Zone;
     }());
     Zone.__symbol__ = __symbol__;
+=======
+        Zone.__symbol__ = __symbol__;
+        return Zone;
+    }());
+>>>>>>> Stashed changes
     var DELEGATE_ZS = {
         name: '',
         onHasTask: function (delegate, _, target, hasTaskState) {
@@ -2803,7 +3203,11 @@ var Zone$1 = (function (global) {
             return delegate.cancelTask(target, task);
         }
     };
+<<<<<<< Updated upstream
     var ZoneDelegate = (function () {
+=======
+    var ZoneDelegate = /** @class */ (function () {
+>>>>>>> Stashed changes
         function ZoneDelegate(zone, parentDelegate, zoneSpec) {
             this._taskCounts = { 'microTask': 0, 'macroTask': 0, 'eventTask': 0 };
             this.zone = zone;
@@ -2965,7 +3369,11 @@ var Zone$1 = (function (global) {
         };
         return ZoneDelegate;
     }());
+<<<<<<< Updated upstream
     var ZoneTask = (function () {
+=======
+    var ZoneTask = /** @class */ (function () {
+>>>>>>> Stashed changes
         function ZoneTask(type, source, callback, options, scheduleFn, cancelFn) {
             this._zone = null;
             this.runCount = 0;
@@ -3145,6 +3553,7 @@ var Zone$1 = (function (global) {
     return global['Zone'] = Zone;
 })(typeof window !== 'undefined' && window || typeof self !== 'undefined' && self || global);
 
+<<<<<<< Updated upstream
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3152,6 +3561,8 @@ var Zone$1 = (function (global) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+=======
+>>>>>>> Stashed changes
 Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
     var ObjectDefineProperty = Object.defineProperty;
@@ -3219,6 +3630,12 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     }
     var symbolState = __symbol__('state');
     var symbolValue = __symbol__('value');
+<<<<<<< Updated upstream
+=======
+    var symbolFinally = __symbol__('finally');
+    var symbolParentPromiseValue = __symbol__('parentPromiseValue');
+    var symbolParentPromiseState = __symbol__('parentPromiseState');
+>>>>>>> Stashed changes
     var source = 'Promise.then';
     var UNRESOLVED = null;
     var RESOLVED = true;
@@ -3290,6 +3707,18 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 promise[symbolState] = state;
                 var queue = promise[symbolValue];
                 promise[symbolValue] = value;
+<<<<<<< Updated upstream
+=======
+                if (promise[symbolFinally] === symbolFinally) {
+                    // the promise is generated by Promise.prototype.finally          
+                    if (state === RESOLVED) {
+                        // the state is resolved, should ignore the value
+                        // and use parent promise value
+                        promise[symbolState] = promise[symbolParentPromiseState];
+                        promise[symbolValue] = promise[symbolParentPromiseValue];
+                    }
+                }
+>>>>>>> Stashed changes
                 // record task information in value when error occurs, so we can
                 // do some additional work such as render longStackTrace
                 if (state === REJECTED && value instanceof Error) {
@@ -3352,11 +3781,17 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     }
     function scheduleResolveOrReject(promise, zone, chainPromise, onFulfilled, onRejected) {
         clearRejectedNoCatch(promise);
+<<<<<<< Updated upstream
         var delegate = promise[symbolState] ?
+=======
+        var promiseState = promise[symbolState];
+        var delegate = promiseState ?
+>>>>>>> Stashed changes
             (typeof onFulfilled === 'function') ? onFulfilled : forwardResolution :
             (typeof onRejected === 'function') ? onRejected : forwardRejection;
         zone.scheduleMicroTask(source, function () {
             try {
+<<<<<<< Updated upstream
                 resolvePromise(chainPromise, true, zone.run(delegate, undefined, [promise[symbolValue]]));
             }
             catch (error) {
@@ -3366,6 +3801,27 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     }
     var ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
     var ZoneAwarePromise = (function () {
+=======
+                var parentPromiseValue = promise[symbolValue];
+                var isFinallyPromise = chainPromise && symbolFinally === chainPromise[symbolFinally];
+                if (isFinallyPromise) {
+                    // if the promise is generated from finally call, keep parent promise's state and value
+                    chainPromise[symbolParentPromiseValue] = parentPromiseValue;
+                    chainPromise[symbolParentPromiseState] = promiseState;
+                }
+                // should not pass value to finally callback
+                var value = zone.run(delegate, undefined, isFinallyPromise && delegate !== forwardRejection && delegate !== forwardResolution ? [] : [parentPromiseValue]);
+                resolvePromise(chainPromise, true, value);
+            }
+            catch (error) {
+                // if error occurs, should always return this error
+                resolvePromise(chainPromise, false, error);
+            }
+        }, chainPromise);
+    }
+    var ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
+    var ZoneAwarePromise = /** @class */ (function () {
+>>>>>>> Stashed changes
         function ZoneAwarePromise(executor) {
             var promise = this;
             if (!(promise instanceof ZoneAwarePromise)) {
@@ -3452,6 +3908,21 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         ZoneAwarePromise.prototype.catch = function (onRejected) {
             return this.then(null, onRejected);
         };
+<<<<<<< Updated upstream
+=======
+        ZoneAwarePromise.prototype.finally = function (onFinally) {
+            var chainPromise = new this.constructor(null);
+            chainPromise[symbolFinally] = symbolFinally;
+            var zone = Zone.current;
+            if (this[symbolState] == UNRESOLVED) {
+                this[symbolValue].push(zone, chainPromise, onFinally, onFinally);
+            }
+            else {
+                scheduleResolveOrReject(this, zone, chainPromise, onFinally, onFinally);
+            }
+            return chainPromise;
+        };
+>>>>>>> Stashed changes
         return ZoneAwarePromise;
     }());
     // Protect against aggressive optimizers dropping seemingly unused properties.
@@ -3501,6 +3972,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     var symbolThenPatched = __symbol__('thenPatched');
     function patchThen(Ctor) {
         var proto = Ctor.prototype;
+<<<<<<< Updated upstream
         var originalThen = proto.then;
         // Keep a reference to the original method.
         proto[symbolThen] = originalThen;
@@ -3510,6 +3982,17 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         if (prop && prop.writable === false && prop.configurable) {
             ObjectDefineProperty(Ctor.prototype, 'then', { writable: true });
         }
+=======
+        var prop = ObjectGetOwnPropertyDescriptor(proto, 'then');
+        if (prop && (prop.writable === false || !prop.configurable)) {
+            // check Ctor.prototype.then propertyDescriptor is writable or not
+            // in meteor env, writable is false, we should ignore such case
+            return;
+        }
+        var originalThen = proto.then;
+        // Keep a reference to the original method.
+        proto[symbolThen] = originalThen;
+>>>>>>> Stashed changes
         Ctor.prototype.then = function (onResolve, onReject) {
             var _this = this;
             var wrapped = new ZoneAwarePromise(function (resolve, reject) {
@@ -3558,6 +4041,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
  */
 // issue #989, to reduce bundle size, use short name
 /** Object.getOwnPropertyDescriptor */
+<<<<<<< Updated upstream
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3565,6 +4049,9 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */ var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+=======
+var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+>>>>>>> Stashed changes
 /** Object.defineProperty */
 var ObjectDefineProperty = Object.defineProperty;
 /** Object.getPrototypeOf */
@@ -3931,6 +4418,7 @@ function isIEOrEdge() {
  */
 // override Function.prototype.toString to make zone.js patched function
 // look like native function
+<<<<<<< Updated upstream
 Zone.__load_patch('toString', function (global, Zone) {
     // patch Func.prototype.toString to let them look like native
     var originalFunctionToString = Zone['__zone_symbol__originalToString'] =
@@ -3939,6 +4427,15 @@ Zone.__load_patch('toString', function (global, Zone) {
     var PROMISE_SYMBOL = zoneSymbol('Promise');
     var ERROR_SYMBOL = zoneSymbol('Error');
     Function.prototype.toString = function () {
+=======
+Zone.__load_patch('toString', function (global) {
+    // patch Func.prototype.toString to let them look like native
+    var originalFunctionToString = Function.prototype.toString;
+    var ORIGINAL_DELEGATE_SYMBOL = zoneSymbol('OriginalDelegate');
+    var PROMISE_SYMBOL = zoneSymbol('Promise');
+    var ERROR_SYMBOL = zoneSymbol('Error');
+    var newFunctionToString = function toString() {
+>>>>>>> Stashed changes
         if (typeof this === 'function') {
             var originalDelegate = this[ORIGINAL_DELEGATE_SYMBOL];
             if (originalDelegate) {
@@ -3964,6 +4461,11 @@ Zone.__load_patch('toString', function (global, Zone) {
         }
         return originalFunctionToString.apply(this, arguments);
     };
+<<<<<<< Updated upstream
+=======
+    newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
+    Function.prototype.toString = newFunctionToString;
+>>>>>>> Stashed changes
     // patch Object.prototype.toString to let them look like native
     var originalObjectToString = Object.prototype.toString;
     var PROMISE_OBJECT_TO_STRING = '[object Promise]';
@@ -4388,6 +4890,12 @@ function patchEventTarget(_global, apis, patchOptions) {
                             target[symbolEventName] = null;
                         }
                         existingTask.zone.cancelTask(existingTask);
+<<<<<<< Updated upstream
+=======
+                        if (returnTarget) {
+                            return target;
+                        }
+>>>>>>> Stashed changes
                         return;
                     }
                 }
@@ -4455,6 +4963,12 @@ function patchEventTarget(_global, apis, patchOptions) {
                     }
                 }
             }
+<<<<<<< Updated upstream
+=======
+            if (returnTarget) {
+                return this;
+            }
+>>>>>>> Stashed changes
         };
         // for native toString patch
         attachOriginToPatched(proto[ADD_EVENT_LISTENER], nativeAddEventListener);
@@ -5026,6 +5540,14 @@ function filterProperties(target, onProperties, ignoreProperties) {
     return onProperties.filter(function (op) { return targetIgnoreProperties.indexOf(op) === -1; });
 }
 function patchFilteredProperties(target, onProperties, ignoreProperties, prototype) {
+<<<<<<< Updated upstream
+=======
+    // check whether target is available, sometimes target will be undefined
+    // because different browser or some 3rd party plugin.
+    if (!target) {
+        return;
+    }
+>>>>>>> Stashed changes
     var filteredProperties = filterProperties(target, onProperties, ignoreProperties);
     patchOnProperties(target, filteredProperties, prototype);
 }
@@ -5534,7 +6056,11 @@ Zone.__load_patch('PromiseRejectionEvent', function (global, Zone) {
 /* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(72);
+=======
+module.exports = __webpack_require__(73);
+>>>>>>> Stashed changes
 
 
 /***/ })

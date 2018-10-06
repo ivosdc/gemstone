@@ -211,7 +211,11 @@ webpackJsonp([3,4],[
 /* unused harmony export ɵu */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -1007,7 +1011,11 @@ var Version = (function () {
 /**
  * \@stable
  */
+<<<<<<< Updated upstream
 var VERSION = new Version('4.4.6');
+=======
+var VERSION = new Version('4.4.7');
+>>>>>>> Stashed changes
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -5867,7 +5875,11 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
+<<<<<<< Updated upstream
         return __webpack_require__(70)(module)
+=======
+        return __webpack_require__(71)(module)
+>>>>>>> Stashed changes
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -5883,7 +5895,11 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
+<<<<<<< Updated upstream
         return __webpack_require__(70)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+=======
+        return __webpack_require__(71)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+>>>>>>> Stashed changes
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -15049,7 +15065,11 @@ function transition$$1(stateChangeExpr, steps) {
 
 var root_1 = __webpack_require__(22);
 var toSubscriber_1 = __webpack_require__(167);
+<<<<<<< Updated upstream
 var observable_1 = __webpack_require__(65);
+=======
+var observable_1 = __webpack_require__(66);
+>>>>>>> Stashed changes
 var pipe_1 = __webpack_require__(165);
 /**
  * A representation of any set of values over any amount of time. This is the most basic building block
@@ -15275,7 +15295,11 @@ var Observable = (function () {
             }, reject, resolve);
         });
     };
+<<<<<<< Updated upstream
     Observable.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ Observable.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         return this.source.subscribe(subscriber);
     };
     /**
@@ -15394,9 +15418,18 @@ and limitations under the License.
 ***************************************************************************** */
 /* global Reflect, Promise */
 
+<<<<<<< Updated upstream
 var extendStatics = Object.setPrototypeOf ||
     ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
     function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+=======
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+>>>>>>> Stashed changes
 
 function __extends(d, b) {
     extendStatics(d, b);
@@ -15404,12 +15437,24 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
+<<<<<<< Updated upstream
 var __assign = Object.assign || function __assign(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
         for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
     }
     return t;
+=======
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+>>>>>>> Stashed changes
 }
 
 function __rest(s, e) {
@@ -15453,8 +15498,13 @@ function __generator(thisArg, body) {
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
+<<<<<<< Updated upstream
             if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [0, t.value];
+=======
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+>>>>>>> Stashed changes
             switch (op[0]) {
                 case 0: case 1: t = op; break;
                 case 4: _.label++; return { value: op[1], done: false };
@@ -15522,7 +15572,11 @@ function __asyncGenerator(thisArg, _arguments, generator) {
     return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
     function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
     function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+<<<<<<< Updated upstream
     function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);  }
+=======
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+>>>>>>> Stashed changes
     function fulfill(value) { resume("next", value); }
     function reject(value) { resume("throw", value); }
     function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
@@ -15531,13 +15585,24 @@ function __asyncGenerator(thisArg, _arguments, generator) {
 function __asyncDelegator(o) {
     var i, p;
     return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+<<<<<<< Updated upstream
     function verb(n, f) { if (o[n]) i[n] = function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; }; }
+=======
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+>>>>>>> Stashed changes
 }
 
 function __asyncValues(o) {
     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+<<<<<<< Updated upstream
     var m = o[Symbol.asyncIterator];
     return m ? m.call(o) : typeof __values === "function" ? __values(o) : o[Symbol.iterator]();
+=======
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+>>>>>>> Stashed changes
 }
 
 function __makeTemplateObject(cooked, raw) {
@@ -15559,7 +15624,12 @@ function __importDefault(mod) {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 14 */
+=======
+/* 14 */,
+/* 15 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15569,9 +15639,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+<<<<<<< Updated upstream
 var isFunction_1 = __webpack_require__(67);
 var Subscription_1 = __webpack_require__(29);
 var Observer_1 = __webpack_require__(63);
+=======
+var isFunction_1 = __webpack_require__(68);
+var Subscription_1 = __webpack_require__(29);
+var Observer_1 = __webpack_require__(64);
+>>>>>>> Stashed changes
 var rxSubscriber_1 = __webpack_require__(48);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -15609,10 +15685,20 @@ var Subscriber = (function (_super) {
                     break;
                 }
                 if (typeof destinationOrNext === 'object') {
+<<<<<<< Updated upstream
                     if (destinationOrNext instanceof Subscriber) {
                         this.syncErrorThrowable = destinationOrNext.syncErrorThrowable;
                         this.destination = destinationOrNext;
                         this.destination.add(this);
+=======
+                    // HACK(benlesh): To resolve an issue where Node users may have multiple
+                    // copies of rxjs in their node_modules directory.
+                    if (isTrustedSubscriber(destinationOrNext)) {
+                        var trustedSubscriber = destinationOrNext[rxSubscriber_1.rxSubscriber]();
+                        this.syncErrorThrowable = trustedSubscriber.syncErrorThrowable;
+                        this.destination = trustedSubscriber;
+                        trustedSubscriber.add(this);
+>>>>>>> Stashed changes
                     }
                     else {
                         this.syncErrorThrowable = true;
@@ -15698,7 +15784,11 @@ var Subscriber = (function (_super) {
         this.destination.complete();
         this.unsubscribe();
     };
+<<<<<<< Updated upstream
     Subscriber.prototype._unsubscribeAndRecycle = function () {
+=======
+    /** @deprecated internal use only */ Subscriber.prototype._unsubscribeAndRecycle = function () {
+>>>>>>> Stashed changes
         var _a = this, _parent = _a._parent, _parents = _a._parents;
         this._parent = null;
         this._parents = null;
@@ -15819,7 +15909,11 @@ var SafeSubscriber = (function (_super) {
         }
         return false;
     };
+<<<<<<< Updated upstream
     SafeSubscriber.prototype._unsubscribe = function () {
+=======
+    /** @deprecated internal use only */ SafeSubscriber.prototype._unsubscribe = function () {
+>>>>>>> Stashed changes
         var _parentSubscriber = this._parentSubscriber;
         this._context = null;
         this._parentSubscriber = null;
@@ -15827,10 +15921,19 @@ var SafeSubscriber = (function (_super) {
     };
     return SafeSubscriber;
 }(Subscriber));
+<<<<<<< Updated upstream
 //# sourceMappingURL=Subscriber.js.map
 
 /***/ }),
 /* 15 */,
+=======
+function isTrustedSubscriber(obj) {
+    return obj instanceof Subscriber || ('syncErrorThrowable' in obj && obj[rxSubscriber_1.rxSubscriber]);
+}
+//# sourceMappingURL=Subscriber.js.map
+
+/***/ }),
+>>>>>>> Stashed changes
 /* 16 */,
 /* 17 */,
 /* 18 */,
@@ -15956,10 +16059,17 @@ module.exports = g;
 "use strict";
 
 var isArray_1 = __webpack_require__(161);
+<<<<<<< Updated upstream
 var isObject_1 = __webpack_require__(68);
 var isFunction_1 = __webpack_require__(67);
 var tryCatch_1 = __webpack_require__(168);
 var errorObject_1 = __webpack_require__(66);
+=======
+var isObject_1 = __webpack_require__(69);
+var isFunction_1 = __webpack_require__(68);
+var tryCatch_1 = __webpack_require__(168);
+var errorObject_1 = __webpack_require__(67);
+>>>>>>> Stashed changes
 var UnsubscriptionError_1 = __webpack_require__(159);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
@@ -16173,7 +16283,11 @@ function flattenUnsubscriptionErrors(errors) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return AnimationGroupPlayer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return ɵPRE_STYLE; });
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -17544,7 +17658,11 @@ var ɵPRE_STYLE = '!';
 /* unused harmony export ɵe */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -20895,6 +21013,177 @@ KeyEventsPlugin.ctorParameters = function () { return [
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+<<<<<<< Updated upstream
+=======
+ * This helper class is used to get hold of an inert tree of DOM elements containing dirty HTML
+ * that needs sanitizing.
+ * Depending upon browser support we must use one of three strategies for doing this.
+ * Support: Safari 10.x -> XHR strategy
+ * Support: Firefox -> DomParser strategy
+ * Default: InertDocument strategy
+ */
+var InertBodyHelper = (function () {
+    /**
+     * @param {?} defaultDoc
+     * @param {?} DOM
+     */
+    function InertBodyHelper(defaultDoc, DOM) {
+        this.defaultDoc = defaultDoc;
+        this.DOM = DOM;
+        var inertDocument = this.DOM.createHtmlDocument();
+        this.inertBodyElement = inertDocument.body;
+        if (this.inertBodyElement == null) {
+            // usually there should be only one body element in the document, but IE doesn't have any, so
+            // we need to create one.
+            var inertHtml = this.DOM.createElement('html', inertDocument);
+            this.inertBodyElement = this.DOM.createElement('body', inertDocument);
+            this.DOM.appendChild(inertHtml, this.inertBodyElement);
+            this.DOM.appendChild(inertDocument, inertHtml);
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, '<svg><g onload="this.parentNode.remove()"></g></svg>');
+        if (this.inertBodyElement.querySelector && !this.inertBodyElement.querySelector('svg')) {
+            // We just hit the Safari 10.1 bug - which allows JS to run inside the SVG G element
+            // so use the XHR strategy.
+            this.getInertBodyElement = this.getInertBodyElement_XHR;
+            return;
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, '<svg><p><style><img src="</style><img src=x onerror=alert(1)//">');
+        if (this.inertBodyElement.querySelector && this.inertBodyElement.querySelector('svg img')) {
+            // We just hit the Firefox bug - which prevents the inner img JS from being sanitized
+            // so use the DOMParser strategy, if it is available.
+            // If the DOMParser is not available then we are not in Firefox (Server/WebWorker?) so we
+            // fall through to the default strategy below.
+            if (isDOMParserAvailable()) {
+                this.getInertBodyElement = this.getInertBodyElement_DOMParser;
+                return;
+            }
+        }
+        // None of the bugs were hit so it is safe for us to use the default InertDocument strategy
+        this.getInertBodyElement = this.getInertBodyElement_InertDocument;
+    }
+    /**
+     * Use XHR to create and fill an inert body element (on Safari 10.1)
+     * See
+     * https://github.com/cure53/DOMPurify/blob/a992d3a75031cb8bb032e5ea8399ba972bdf9a65/src/purify.js#L439-L449
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_XHR = function (html) {
+        // We add these extra elements to ensure that the rest of the content is parsed as expected
+        // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
+        // `<head>` tag.
+        html = '<body><remove></remove>' + html + '</body>';
+        try {
+            html = encodeURI(html);
+        }
+        catch (e) {
+            return null;
+        }
+        var /** @type {?} */ xhr = new XMLHttpRequest();
+        xhr.responseType = 'document';
+        xhr.open('GET', 'data:text/html;charset=utf-8,' + html, false);
+        xhr.send(null);
+        var /** @type {?} */ body = xhr.response.body;
+        body.removeChild(/** @type {?} */ ((body.firstChild)));
+        return body;
+    };
+    /**
+     * Use DOMParser to create and fill an inert body element (on Firefox)
+     * See https://github.com/cure53/DOMPurify/releases/tag/0.6.7
+     *
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_DOMParser = function (html) {
+        // We add these extra elements to ensure that the rest of the content is parsed as expected
+        // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
+        // `<head>` tag.
+        html = '<body><remove></remove>' + html + '</body>';
+        try {
+            var /** @type {?} */ body = (new ((window))
+                .DOMParser()
+                .parseFromString(html, 'text/html')
+                .body);
+            body.removeChild(/** @type {?} */ ((body.firstChild)));
+            return body;
+        }
+        catch (e) {
+            return null;
+        }
+    };
+    /**
+     * Use an HTML5 `template` element, if supported, or an inert body element created via
+     * `createHtmlDocument` to create and fill an inert DOM element.
+     * This is the default sane strategy to use if the browser does not require one of the specialised
+     * strategies above.
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_InertDocument = function (html) {
+        // Prefer using <template> element if supported.
+        var /** @type {?} */ templateEl = this.DOM.createElement('template');
+        if ('content' in templateEl) {
+            this.DOM.setInnerHTML(templateEl, html);
+            return templateEl;
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, html);
+        // Support: IE 9-11 only
+        // strip custom-namespaced attributes on IE<=11
+        if (this.defaultDoc.documentMode) {
+            this.stripCustomNsAttrs(this.inertBodyElement);
+        }
+        return this.inertBodyElement;
+    };
+    /**
+     * When IE9-11 comes across an unknown namespaced attribute e.g. 'xlink:foo' it adds 'xmlns:ns1'
+     * attribute to declare ns1 namespace and prefixes the attribute with 'ns1' (e.g.
+     * 'ns1:xlink:foo').
+     *
+     * This is undesirable since we don't want to allow any of these custom attributes. This method
+     * strips them all.
+     * @param {?} el
+     * @return {?}
+     */
+    InertBodyHelper.prototype.stripCustomNsAttrs = function (el) {
+        var _this = this;
+        this.DOM.attributeMap(el).forEach(function (_, attrName) {
+            if (attrName === 'xmlns:ns1' || attrName.indexOf('ns1:') === 0) {
+                _this.DOM.removeAttribute(el, attrName);
+            }
+        });
+        for (var _i = 0, _a = this.DOM.childNodesAsList(el); _i < _a.length; _i++) {
+            var n = _a[_i];
+            if (this.DOM.isElementNode(n))
+                this.stripCustomNsAttrs(/** @type {?} */ (n));
+        }
+    };
+    return InertBodyHelper;
+}());
+/**
+ * We need to determine whether the DOMParser exists in the global context.
+ * The try-catch is because, on some browsers, trying to access this property
+ * on window can actually throw an error.
+ *
+ * @suppress {uselessCode}
+ * @return {?}
+ */
+function isDOMParserAvailable() {
+    try {
+        return !!((window)).DOMParser;
+    }
+    catch (e) {
+        return false;
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+>>>>>>> Stashed changes
  * A pattern that recognizes a commonly useful subset of URLs that are safe.
  *
  * This regular expression matches a subset of URLs that will not cause script
@@ -20954,6 +21243,7 @@ function sanitizeSrcset(srcset) {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+<<<<<<< Updated upstream
  * A <body> element that can be safely used to parse untrusted HTML. Lazily initialized below.
  */
 var inertElement = null;
@@ -20986,6 +21276,8 @@ function getInertElement() {
     return inertElement;
 }
 /**
+=======
+>>>>>>> Stashed changes
  * @param {?} tags
  * @return {?}
  */
@@ -21060,6 +21352,10 @@ var SanitizingHtmlSerializer = (function () {
     function SanitizingHtmlSerializer() {
         this.sanitizedSomething = false;
         this.buf = [];
+<<<<<<< Updated upstream
+=======
+        this.DOM = getDOM();
+>>>>>>> Stashed changes
     }
     /**
      * @param {?} el
@@ -21069,6 +21365,7 @@ var SanitizingHtmlSerializer = (function () {
         // This cannot use a TreeWalker, as it has to run on Angular's various DOM adapters.
         // However this code never accesses properties off of `document` before deleting its contents
         // again, so it shouldn't be vulnerable to DOM clobbering.
+<<<<<<< Updated upstream
         var /** @type {?} */ current = ((el.firstChild));
         while (current) {
             if (DOM.isElementNode(current)) {
@@ -21076,26 +21373,51 @@ var SanitizingHtmlSerializer = (function () {
             }
             else if (DOM.isTextNode(current)) {
                 this.chars(/** @type {?} */ ((DOM.nodeValue(current))));
+=======
+        var /** @type {?} */ current = ((this.DOM.firstChild(el)));
+        while (current) {
+            if (this.DOM.isElementNode(current)) {
+                this.startElement(/** @type {?} */ (current));
+            }
+            else if (this.DOM.isTextNode(current)) {
+                this.chars(/** @type {?} */ ((this.DOM.nodeValue(current))));
+>>>>>>> Stashed changes
             }
             else {
                 // Strip non-element, non-text nodes.
                 this.sanitizedSomething = true;
             }
+<<<<<<< Updated upstream
             if (DOM.firstChild(current)) {
                 current = ((DOM.firstChild(current)));
+=======
+            if (this.DOM.firstChild(current)) {
+                current = ((this.DOM.firstChild(current)));
+>>>>>>> Stashed changes
                 continue;
             }
             while (current) {
                 // Leaving the element. Walk up and to the right, closing tags as we go.
+<<<<<<< Updated upstream
                 if (DOM.isElementNode(current)) {
                     this.endElement(/** @type {?} */ (current));
                 }
                 var /** @type {?} */ next = checkClobberedElement(current, /** @type {?} */ ((DOM.nextSibling(current))));
+=======
+                if (this.DOM.isElementNode(current)) {
+                    this.endElement(/** @type {?} */ (current));
+                }
+                var /** @type {?} */ next = this.checkClobberedElement(current, /** @type {?} */ ((this.DOM.nextSibling(current))));
+>>>>>>> Stashed changes
                 if (next) {
                     current = next;
                     break;
                 }
+<<<<<<< Updated upstream
                 current = checkClobberedElement(current, /** @type {?} */ ((DOM.parentElement(current))));
+=======
+                current = this.checkClobberedElement(current, /** @type {?} */ ((this.DOM.parentElement(current))));
+>>>>>>> Stashed changes
             }
         }
         return this.buf.join('');
@@ -21106,14 +21428,22 @@ var SanitizingHtmlSerializer = (function () {
      */
     SanitizingHtmlSerializer.prototype.startElement = function (element) {
         var _this = this;
+<<<<<<< Updated upstream
         var /** @type {?} */ tagName = DOM.nodeName(element).toLowerCase();
+=======
+        var /** @type {?} */ tagName = this.DOM.nodeName(element).toLowerCase();
+>>>>>>> Stashed changes
         if (!VALID_ELEMENTS.hasOwnProperty(tagName)) {
             this.sanitizedSomething = true;
             return;
         }
         this.buf.push('<');
         this.buf.push(tagName);
+<<<<<<< Updated upstream
         DOM.attributeMap(element).forEach(function (value, attrName) {
+=======
+        this.DOM.attributeMap(element).forEach(function (value, attrName) {
+>>>>>>> Stashed changes
             var /** @type {?} */ lower = attrName.toLowerCase();
             if (!VALID_ATTRS.hasOwnProperty(lower)) {
                 _this.sanitizedSomething = true;
@@ -21137,7 +21467,11 @@ var SanitizingHtmlSerializer = (function () {
      * @return {?}
      */
     SanitizingHtmlSerializer.prototype.endElement = function (current) {
+<<<<<<< Updated upstream
         var /** @type {?} */ tagName = DOM.nodeName(current).toLowerCase();
+=======
+        var /** @type {?} */ tagName = this.DOM.nodeName(current).toLowerCase();
+>>>>>>> Stashed changes
         if (VALID_ELEMENTS.hasOwnProperty(tagName) && !VOID_ELEMENTS.hasOwnProperty(tagName)) {
             this.buf.push('</');
             this.buf.push(tagName);
@@ -21149,6 +21483,7 @@ var SanitizingHtmlSerializer = (function () {
      * @return {?}
      */
     SanitizingHtmlSerializer.prototype.chars = function (chars) { this.buf.push(encodeEntities(chars)); };
+<<<<<<< Updated upstream
     return SanitizingHtmlSerializer;
 }());
 /**
@@ -21162,6 +21497,21 @@ function checkClobberedElement(node, nextNode) {
     }
     return nextNode;
 }
+=======
+    /**
+     * @param {?} node
+     * @param {?} nextNode
+     * @return {?}
+     */
+    SanitizingHtmlSerializer.prototype.checkClobberedElement = function (node, nextNode) {
+        if (nextNode && this.DOM.contains(node, nextNode)) {
+            throw new Error("Failed to sanitize html because the element is clobbered: " + this.DOM.getOuterHTML(node));
+        }
+        return nextNode;
+    };
+    return SanitizingHtmlSerializer;
+}());
+>>>>>>> Stashed changes
 // Regular Expressions for parsing tags and attributes
 var SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
 // ! to ~ is the ASCII range.
@@ -21184,6 +21534,7 @@ function encodeEntities(value) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 }
+<<<<<<< Updated upstream
 /**
  * When IE9-11 comes across an unknown namespaced attribute e.g. 'xlink:foo' it adds 'xmlns:ns1'
  * attribute to declare ns1 namespace and prefixes the attribute with 'ns1' (e.g. 'ns1:xlink:foo').
@@ -21205,6 +21556,9 @@ function stripCustomNsAttrs(el) {
             stripCustomNsAttrs(/** @type {?} */ (n));
     }
 }
+=======
+var inertBodyHelper;
+>>>>>>> Stashed changes
 /**
  * Sanitizes the given unsafe, untrusted HTML fragment, and returns HTML text that is safe to add to
  * the DOM in a browser environment.
@@ -21213,10 +21567,20 @@ function stripCustomNsAttrs(el) {
  * @return {?}
  */
 function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
+<<<<<<< Updated upstream
     try {
         var /** @type {?} */ containerEl = getInertElement();
         // Make sure unsafeHtml is actually a string (TypeScript types are not enforced at runtime).
         var /** @type {?} */ unsafeHtml = unsafeHtmlInput ? String(unsafeHtmlInput) : '';
+=======
+    var /** @type {?} */ DOM = getDOM();
+    var /** @type {?} */ inertBodyElement = null;
+    try {
+        inertBodyHelper = inertBodyHelper || new InertBodyHelper(defaultDoc, DOM);
+        // Make sure unsafeHtml is actually a string (TypeScript types are not enforced at runtime).
+        var /** @type {?} */ unsafeHtml = unsafeHtmlInput ? String(unsafeHtmlInput) : '';
+        inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
+>>>>>>> Stashed changes
         // mXSS protection. Repeatedly parse the document to make sure it stabilizes, so that a browser
         // trying to auto-correct incorrect HTML cannot cause formerly inert HTML to become dangerous.
         var /** @type {?} */ mXSSAttempts = 5;
@@ -21227,6 +21591,7 @@ function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
             }
             mXSSAttempts--;
             unsafeHtml = parsedHtml;
+<<<<<<< Updated upstream
             DOM.setInnerHTML(containerEl, unsafeHtml);
             if (defaultDoc.documentMode) {
                 // strip custom-namespaced attributes on IE<=11
@@ -21242,15 +21607,34 @@ function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
             var child = _a[_i];
             DOM.removeChild(parent, child);
         }
+=======
+            parsedHtml = DOM.getInnerHTML(inertBodyElement);
+            inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
+        } while (unsafeHtml !== parsedHtml);
+        var /** @type {?} */ sanitizer = new SanitizingHtmlSerializer();
+        var /** @type {?} */ safeHtml = sanitizer.sanitizeChildren(DOM.getTemplateContent(inertBodyElement) || inertBodyElement);
+>>>>>>> Stashed changes
         if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && sanitizer.sanitizedSomething) {
             DOM.log('WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).');
         }
         return safeHtml;
     }
+<<<<<<< Updated upstream
     catch (e) {
         // In case anything goes wrong, clear out inertElement to reset the entire DOM structure.
         inertElement = null;
         throw e;
+=======
+    finally {
+        // In case anything goes wrong, clear out inertElement to reset the entire DOM structure.
+        if (inertBodyElement) {
+            var /** @type {?} */ parent = DOM.getTemplateContent(inertBodyElement) || inertBodyElement;
+            for (var _i = 0, _a = DOM.childNodesAsList(parent); _i < _a.length; _i++) {
+                var child = _a[_i];
+                DOM.removeChild(parent, child);
+            }
+        }
+>>>>>>> Stashed changes
     }
 }
 /**
@@ -21947,7 +22331,11 @@ var By = (function () {
 /**
  * \@stable
  */
+<<<<<<< Updated upstream
 var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["C" /* Version */]('4.4.6');
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["C" /* Version */]('4.4.7');
+>>>>>>> Stashed changes
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -22002,7 +22390,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(10);
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
+=======
+var Subscriber_1 = __webpack_require__(15);
+>>>>>>> Stashed changes
 var Subscription_1 = __webpack_require__(29);
 var ObjectUnsubscribedError_1 = __webpack_require__(158);
 var SubjectSubscription_1 = __webpack_require__(146);
@@ -22094,7 +22486,11 @@ var Subject = (function (_super) {
             return _super.prototype._trySubscribe.call(this, subscriber);
         }
     };
+<<<<<<< Updated upstream
     Subject.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ Subject.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         if (this.closed) {
             throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
         }
@@ -22150,7 +22546,11 @@ var AnonymousSubject = (function (_super) {
             this.destination.complete();
         }
     };
+<<<<<<< Updated upstream
     AnonymousSubject.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ AnonymousSubject.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         var source = this.source;
         if (source) {
             return this.source.subscribe(subscriber);
@@ -22239,7 +22639,11 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 /* unused harmony export ɵb */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -26206,7 +26610,11 @@ function isPlatformWorkerUi(platformId) {
 /**
  * \@stable
  */
+<<<<<<< Updated upstream
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Version */]('4.4.6');
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Version */]('4.4.7');
+>>>>>>> Stashed changes
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -26253,7 +26661,12 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Version */]
 /* 60 */,
 /* 61 */,
 /* 62 */,
+<<<<<<< Updated upstream
 /* 63 */
+=======
+/* 63 */,
+/* 64 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26267,7 +26680,11 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 64 */
+=======
+/* 65 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26277,7 +26694,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
+=======
+var Subscriber_1 = __webpack_require__(15);
+>>>>>>> Stashed changes
 function refCount() {
     return function refCountOperatorFunction(source) {
         return source.lift(new RefCountOperator(source));
@@ -26306,7 +26727,11 @@ var RefCountSubscriber = (function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
+<<<<<<< Updated upstream
     RefCountSubscriber.prototype._unsubscribe = function () {
+=======
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
+>>>>>>> Stashed changes
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -26358,7 +26783,11 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=refCount.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 65 */
+=======
+/* 66 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26390,7 +26819,11 @@ exports.$$observable = exports.observable;
 //# sourceMappingURL=observable.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 66 */
+=======
+/* 67 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26400,7 +26833,11 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 67 */
+=======
+/* 68 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26412,7 +26849,11 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 68 */
+=======
+/* 69 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26424,7 +26865,11 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 69 */
+=======
+/* 70 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26436,11 +26881,19 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 70 */,
 /* 71 */,
 /* 72 */,
 /* 73 */,
 /* 74 */
+=======
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26458,7 +26911,11 @@ exports.isScheduler = isScheduler;
 /* unused harmony export ɵWebAnimationsPlayer */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -31370,7 +31827,11 @@ function supportsWebAnimations() {
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 75 */
+=======
+/* 76 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31595,7 +32056,11 @@ function supportsWebAnimations() {
 /* unused harmony export removeSummaryDuplicates */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -31615,7 +32080,11 @@ function supportsWebAnimations() {
 /**
  * \@stable
  */
+<<<<<<< Updated upstream
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Version */]('4.4.6');
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Version */]('4.4.7');
+>>>>>>> Stashed changes
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -59267,12 +59736,20 @@ function _mergeArrays(parts) {
 //# sourceMappingURL=compiler.es5.js.map
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 76 */
+=======
+/* 77 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(13);
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(75);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(76);
+>>>>>>> Stashed changes
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(31);
@@ -59283,7 +59760,11 @@ function _mergeArrays(parts) {
 /* unused harmony export ɵResourceLoaderImpl */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -59416,7 +59897,11 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
+<<<<<<< Updated upstream
 var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["C" /* Version */]('4.4.6');
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["C" /* Version */]('4.4.7');
+>>>>>>> Stashed changes
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -59450,7 +59935,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 77 */
+=======
+/* 78 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59458,7 +59947,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_animations__ = __webpack_require__(30);
+<<<<<<< Updated upstream
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__ = __webpack_require__(74);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__ = __webpack_require__(75);
+>>>>>>> Stashed changes
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrowserAnimationsModule; });
 /* unused harmony export NoopAnimationsModule */
 /* unused harmony export ɵBrowserAnimationBuilder */
@@ -59474,7 +59967,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* unused harmony export ɵc */
 
 /**
+<<<<<<< Updated upstream
  * @license Angular v4.4.6
+=======
+ * @license Angular v4.4.7
+>>>>>>> Stashed changes
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -60216,13 +60713,21 @@ NoopAnimationsModule.ctorParameters = function () { return []; };
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 78 */,
+=======
+>>>>>>> Stashed changes
 /* 79 */,
 /* 80 */,
 /* 81 */,
 /* 82 */,
 /* 83 */,
+<<<<<<< Updated upstream
 /* 84 */
+=======
+/* 84 */,
+/* 85 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65552,7 +66057,10 @@ DragDropDirectiveModule.ctorParameters = function () { return []; };
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23)))
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 85 */,
+=======
+>>>>>>> Stashed changes
 /* 86 */,
 /* 87 */,
 /* 88 */,
@@ -65621,7 +66129,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
+=======
+var Subscriber_1 = __webpack_require__(15);
+>>>>>>> Stashed changes
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -65663,7 +66175,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
+=======
+var Subscriber_1 = __webpack_require__(15);
+>>>>>>> Stashed changes
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -65748,7 +66264,11 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(10);
 var ScalarObservable_1 = __webpack_require__(150);
 var EmptyObservable_1 = __webpack_require__(149);
+<<<<<<< Updated upstream
 var isScheduler_1 = __webpack_require__(69);
+=======
+var isScheduler_1 = __webpack_require__(70);
+>>>>>>> Stashed changes
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -65840,7 +66360,11 @@ var ArrayObservable = (function (_super) {
         state.index = index + 1;
         this.schedule(state);
     };
+<<<<<<< Updated upstream
     ArrayObservable.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ ArrayObservable.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         var index = 0;
         var array = this.array;
         var count = array.length;
@@ -65875,14 +66399,21 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(47);
 var Observable_1 = __webpack_require__(10);
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
 var Subscription_1 = __webpack_require__(29);
 var refCount_1 = __webpack_require__(64);
+=======
+var Subscriber_1 = __webpack_require__(15);
+var Subscription_1 = __webpack_require__(29);
+var refCount_1 = __webpack_require__(65);
+>>>>>>> Stashed changes
 /**
  * @class ConnectableObservable<T>
  */
 var ConnectableObservable = (function (_super) {
     __extends(ConnectableObservable, _super);
+<<<<<<< Updated upstream
     function ConnectableObservable(source, subjectFactory) {
         _super.call(this);
         this.source = source;
@@ -65894,6 +66425,20 @@ var ConnectableObservable = (function (_super) {
         return this.getSubject().subscribe(subscriber);
     };
     ConnectableObservable.prototype.getSubject = function () {
+=======
+    function ConnectableObservable(/** @deprecated internal use only */ source, 
+        /** @deprecated internal use only */ subjectFactory) {
+        _super.call(this);
+        this.source = source;
+        this.subjectFactory = subjectFactory;
+        /** @deprecated internal use only */ this._refCount = 0;
+        this._isComplete = false;
+    }
+    /** @deprecated internal use only */ ConnectableObservable.prototype._subscribe = function (subscriber) {
+        return this.getSubject().subscribe(subscriber);
+    };
+    /** @deprecated internal use only */ ConnectableObservable.prototype.getSubject = function () {
+>>>>>>> Stashed changes
         var subject = this._subject;
         if (!subject || subject.isStopped) {
             this._subject = this.subjectFactory();
@@ -65950,7 +66495,11 @@ var ConnectableSubscriber = (function (_super) {
         this._unsubscribe();
         _super.prototype._complete.call(this);
     };
+<<<<<<< Updated upstream
     ConnectableSubscriber.prototype._unsubscribe = function () {
+=======
+    /** @deprecated internal use only */ ConnectableSubscriber.prototype._unsubscribe = function () {
+>>>>>>> Stashed changes
         var connectable = this.connectable;
         if (connectable) {
             this.connectable = null;
@@ -65987,7 +66536,11 @@ var RefCountSubscriber = (function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
+<<<<<<< Updated upstream
     RefCountSubscriber.prototype._unsubscribe = function () {
+=======
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
+>>>>>>> Stashed changes
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -66111,7 +66664,11 @@ var EmptyObservable = (function (_super) {
         var subscriber = arg.subscriber;
         subscriber.complete();
     };
+<<<<<<< Updated upstream
     EmptyObservable.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ EmptyObservable.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         var scheduler = this.scheduler;
         if (scheduler) {
             return scheduler.schedule(EmptyObservable.dispatch, 0, { subscriber: subscriber });
@@ -66169,7 +66726,11 @@ var ScalarObservable = (function (_super) {
         state.done = true;
         this.schedule(state);
     };
+<<<<<<< Updated upstream
     ScalarObservable.prototype._subscribe = function (subscriber) {
+=======
+    /** @deprecated internal use only */ ScalarObservable.prototype._subscribe = function (subscriber) {
+>>>>>>> Stashed changes
         var value = this.value;
         var scheduler = this.scheduler;
         if (scheduler) {
@@ -66197,7 +66758,11 @@ exports.ScalarObservable = ScalarObservable;
 
 var Observable_1 = __webpack_require__(10);
 var ArrayObservable_1 = __webpack_require__(147);
+<<<<<<< Updated upstream
 var isScheduler_1 = __webpack_require__(69);
+=======
+var isScheduler_1 = __webpack_require__(70);
+>>>>>>> Stashed changes
 var mergeAll_1 = __webpack_require__(153);
 /* tslint:enable:max-line-length */
 /**
@@ -66625,7 +67190,11 @@ exports.MulticastOperator = MulticastOperator;
 "use strict";
 
 var multicast_1 = __webpack_require__(155);
+<<<<<<< Updated upstream
 var refCount_1 = __webpack_require__(64);
+=======
+var refCount_1 = __webpack_require__(65);
+>>>>>>> Stashed changes
 var Subject_1 = __webpack_require__(47);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -66850,11 +67419,19 @@ exports.pipeFromArray = pipeFromArray;
 var root_1 = __webpack_require__(22);
 var isArrayLike_1 = __webpack_require__(162);
 var isPromise_1 = __webpack_require__(163);
+<<<<<<< Updated upstream
 var isObject_1 = __webpack_require__(68);
 var Observable_1 = __webpack_require__(10);
 var iterator_1 = __webpack_require__(157);
 var InnerSubscriber_1 = __webpack_require__(144);
 var observable_1 = __webpack_require__(65);
+=======
+var isObject_1 = __webpack_require__(69);
+var Observable_1 = __webpack_require__(10);
+var iterator_1 = __webpack_require__(157);
+var InnerSubscriber_1 = __webpack_require__(144);
+var observable_1 = __webpack_require__(66);
+>>>>>>> Stashed changes
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -66932,9 +67509,15 @@ exports.subscribeToResult = subscribeToResult;
 
 "use strict";
 
+<<<<<<< Updated upstream
 var Subscriber_1 = __webpack_require__(14);
 var rxSubscriber_1 = __webpack_require__(48);
 var Observer_1 = __webpack_require__(63);
+=======
+var Subscriber_1 = __webpack_require__(15);
+var rxSubscriber_1 = __webpack_require__(48);
+var Observer_1 = __webpack_require__(64);
+>>>>>>> Stashed changes
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -66958,7 +67541,11 @@ exports.toSubscriber = toSubscriber;
 
 "use strict";
 
+<<<<<<< Updated upstream
 var errorObject_1 = __webpack_require__(66);
+=======
+var errorObject_1 = __webpack_require__(67);
+>>>>>>> Stashed changes
 var tryCatchTarget;
 function tryCatcher() {
     try {
