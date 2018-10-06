@@ -1,8 +1,0 @@
-<div class="stone"
-  (@stoneState.start)="animationStarted($event)"
-  (@stoneState.done)="animationDone($event)"
-  [@stoneState]="model.state"
-  [ngStyle]="getStyles()"
-  (mouseover)="model.state = 'inactive';"
-  (mouseout)="model.state = 'active';">
-</div>
